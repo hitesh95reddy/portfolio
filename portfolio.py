@@ -60,15 +60,17 @@ sector_investments['pl_amt']=round(sector_investments['current_value']-sector_in
 sector_investments['pl_amt_pct']=round(sector_investments['pl_amt']*100/sector_investments['investment'],2) 
 st.header("Sector Wise Investments")
 st.write("No of sectors:",sector_investments.shape[0])
-st.dataframe(sector_investments,hide_index=True)
-
-fig = px.bar(sector_investments, x="sector", y=["investment", "current_value"], barmode="group")
-st.plotly_chart(fig)
-
-fig = px.pie(sector_investments, values='investment', names='sector',
-             title='Investmenst by Sector')
-fig.update_traces(textposition='inside', textinfo='percent+label')
-st.plotly_chart(fig)
+tab1, tab2, tab3 = st.tabs(["Tabular", "Bar Chart", "Pie Chart"])
+with tab1:
+    st.dataframe(sector_investments,hide_index=True)
+with tab2:
+    fig = px.bar(sector_investments, x="sector", y=["investment", "current_value"], barmode="group")
+    st.plotly_chart(fig)
+with tab3:
+    fig = px.pie(sector_investments, values='investment', names='sector',
+                title='Investmenst by Sector')
+    fig.update_traces(textposition='inside', textinfo='percent+label')
+    st.plotly_chart(fig)
 
 st.divider()
 
@@ -78,26 +80,29 @@ mcap_investments['current_value_pct']=round(mcap_investments['current_value']*10
 mcap_investments['pl_amt']=round(mcap_investments['current_value']-mcap_investments['investment'],2)
 mcap_investments['pl_amt_pct']=round(mcap_investments['pl_amt']*100/mcap_investments['investment'],2)
 st.header("Market Cap Wise Investments")
-#st.write("No of market caps:",mcap_investments.shape[0])
-st.dataframe(mcap_investments,hide_index=True)
-fig = px.bar(mcap_investments, x="mcap", y=["investment", "current_value"], barmode="group")
-st.plotly_chart(fig)
-
-
-fig = px.pie(mcap_investments, values='investment', names='mcap',
+tab1, tab2, tab3 = st.tabs(["Tabular", "Bar Chart", "Pie Chart"])
+with tab1:
+    st.dataframe(mcap_investments,hide_index=True)
+with tab2:
+    fig = px.bar(mcap_investments, x="mcap", y=["investment", "current_value"], barmode="group")
+    st.plotly_chart(fig)
+with tab3:
+    fig = px.pie(mcap_investments, values='investment', names='mcap',
              title='Investmenst by Market Cap')
-fig.update_traces(textposition='inside', textinfo='percent+label')
-st.plotly_chart(fig)
+    fig.update_traces(textposition='inside', textinfo='percent+label')
+    st.plotly_chart(fig)
 
 st.divider()
 
 if st.checkbox('Show Portfolio'):
-    df['investment_pct']=df['investment']/consolidated_data['investment']*100
-    df['current_value_pct']=df['current_value']/consolidated_data['current_value']*100
-    df['pl_amt_pct']=df['pl_amt']/consolidated_data['pl_amt']*100
-    st.dataframe(df,hide_index=True)
-    
-    fig = px.pie(df, values='investment', names='display_name',
+    tab1, tab2 = st.tabs(["Tabular", "Pie Chart"])
+    with tab1:
+        df['investment_pct']=df['investment']/consolidated_data['investment']*100
+        df['current_value_pct']=df['current_value']/consolidated_data['current_value']*100
+        df['pl_amt_pct']=df['pl_amt']/consolidated_data['pl_amt']*100
+        st.dataframe(df,hide_index=True)
+    with tab2:
+        fig = px.pie(df, values='investment', names='display_name',
              title='Investmenst by company')
-    fig.update_traces(textposition='inside', textinfo='percent+label')
-    st.plotly_chart(fig)
+        fig.update_traces(textposition='inside', textinfo='percent+label')
+        st.plotly_chart(fig)
