@@ -53,6 +53,19 @@ st.divider()
 
 df = pd.DataFrame.from_dict(data)
 
+if st.checkbox('Show Portfolio',value=True):
+    tab1, tab2 = st.tabs(["Tabular", "Pie Chart"])
+    with tab1:
+        df['investment_pct']=df['investment']/consolidated_data['investment']*100
+        df['current_value_pct']=df['current_value']/consolidated_data['current_value']*100
+        df['pl_amt_pct']=df['pl_amt']/consolidated_data['pl_amt']*100
+        st.dataframe(df,hide_index=True)
+    with tab2:
+        fig = px.pie(df, values='investment', names='display_name',
+             title='Investmenst by company')
+        fig.update_traces(textposition='inside', textinfo='percent+label')
+        st.plotly_chart(fig)
+
 sector_investments=df.groupby('sector').agg(investment=('investment', 'sum'), current_value=('current_value', 'sum'),num_stocks=('sector','count')).reset_index()
 sector_investments['investment_pct']=round(sector_investments['investment']*100/consolidated_data['investment'],2)
 sector_investments['current_value_pct']=round(sector_investments['current_value']*100/consolidated_data['current_value'],2)
@@ -93,16 +106,3 @@ with tab3:
     st.plotly_chart(fig)
 
 st.divider()
-
-if st.checkbox('Show Portfolio'):
-    tab1, tab2 = st.tabs(["Tabular", "Pie Chart"])
-    with tab1:
-        df['investment_pct']=df['investment']/consolidated_data['investment']*100
-        df['current_value_pct']=df['current_value']/consolidated_data['current_value']*100
-        df['pl_amt_pct']=df['pl_amt']/consolidated_data['pl_amt']*100
-        st.dataframe(df,hide_index=True)
-    with tab2:
-        fig = px.pie(df, values='investment', names='display_name',
-             title='Investmenst by company')
-        fig.update_traces(textposition='inside', textinfo='percent+label')
-        st.plotly_chart(fig)
