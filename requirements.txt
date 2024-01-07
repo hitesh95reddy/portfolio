@@ -90,8 +90,6 @@ mistune==3.0.2
 ml-dtypes==0.2.0
 multi-key-dict==2.0.3
 multitasking==0.0.11
-mysql-connector-python==8.2.0
-mysqlclient==2.2.0
 nbclient==0.9.0
 nbconvert==7.12.0
 nbformat==5.9.2
