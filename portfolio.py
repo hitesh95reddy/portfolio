@@ -3,7 +3,7 @@ import pandas as pd
 import json
 import os
 import plotly.express as px
-
+import locale
 hide_streamlit_style = """
 <style>
 header {visibility: hidden;padding-top: 0rem;height:0px}
@@ -97,10 +97,11 @@ st.set_page_config(
 )
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.header("Portfolio")
+locale.setlocale( locale.LC_ALL, '' )
 row1=st.columns(3)
-row1[0].metric('Investment',round(consolidated_data['investment']+mf_consolidated_data['investment']+ic_consolidated_data['investment'],2))
-row1[1].metric('Current Value',round(consolidated_data['current_value']+mf_consolidated_data['current_value']+ic_consolidated_data['current_value'],2))    
-row1[2].metric('P/L Amt',consolidated_data['pl_amt']+mf_consolidated_data['pl_amt']+ic_consolidated_data['pl_amt'],f"{round((consolidated_data['pl_amt']+mf_consolidated_data['pl_amt']+ic_consolidated_data['pl_amt'])*100/(consolidated_data['investment']+mf_consolidated_data['investment']+ic_consolidated_data['investment']),2)}%")
+row1[0].metric('Investment',locale.currency(round(consolidated_data['investment']+mf_consolidated_data['investment']+ic_consolidated_data['investment'],2),grouping=True))
+row1[1].metric('Current Value',locale.currency(round(consolidated_data['current_value']+mf_consolidated_data['current_value']+ic_consolidated_data['current_value'],2),grouping=True))   
+row1[2].metric('P/L Amt',locale.currency(consolidated_data['pl_amt']+mf_consolidated_data['pl_amt']+ic_consolidated_data['pl_amt'],grouping=True),f"{round((consolidated_data['pl_amt']+mf_consolidated_data['pl_amt']+ic_consolidated_data['pl_amt'])*100/(consolidated_data['investment']+mf_consolidated_data['investment']+ic_consolidated_data['investment']),2)}%")
 st.divider()
 
 eq_tb,ic_eq_tb,mf_tab=st.tabs(["Equity Portfolio","Cov Eq Portfolio", "Mutual Fund Portfolio"])
@@ -108,9 +109,9 @@ eq_tb,ic_eq_tb,mf_tab=st.tabs(["Equity Portfolio","Cov Eq Portfolio", "Mutual Fu
 df = pd.DataFrame.from_dict(data)
 eq_tb.header("Equity Portfolio")
 row1=eq_tb.columns(3)
-row1[0].metric('Investment',consolidated_data['investment'])
-row1[1].metric('Current Value',consolidated_data['current_value'])
-row1[2].metric('P/L Amt',consolidated_data['pl_amt'],f"{consolidated_data['pl_pct']}%")
+row1[0].metric('Investment',locale.currency(consolidated_data['investment'],grouping=True))
+row1[1].metric('Current Value',locale.currency(consolidated_data['current_value'],grouping=True))
+row1[2].metric('P/L Amt',locale.currency(consolidated_data['pl_amt'],grouping=True),f"{consolidated_data['pl_pct']}%")
 row2=eq_tb.columns(3)
 row2[1].metric('Number of Stocks',consolidated_data['num_stocks'])
 eq_tb.divider()
@@ -173,9 +174,9 @@ if eq_tb.checkbox('Equity Portfolio details',value=True):
 ic_eq_df = pd.DataFrame.from_dict(ic_data)
 ic_eq_tb.header("IC Equity Portfolio")
 row1=ic_eq_tb.columns(3)
-row1[0].metric('Investment',ic_consolidated_data['investment'])
-row1[1].metric('Current Value',ic_consolidated_data['current_value'])
-row1[2].metric('P/L Amt',ic_consolidated_data['pl_amt'],f"{ic_consolidated_data['pl_pct']}%")
+row1[0].metric('Investment',locale.currency(ic_consolidated_data['investment'],grouping=True))
+row1[1].metric('Current Value',locale.currency(ic_consolidated_data['current_value'],grouping=True))
+row1[2].metric('P/L Amt',locale.currency(ic_consolidated_data['pl_amt'],grouping=True),f"{ic_consolidated_data['pl_pct']}%")
 row2=ic_eq_tb.columns(3)
 row2[1].metric('Number of Stocks',ic_consolidated_data['num_stocks'])
 ic_eq_tb.divider()
@@ -194,9 +195,9 @@ if ic_eq_tb.checkbox('IC Equity Portfolio details',value=True):
 ##############################################
 mf_tab.header("Mutual Fund Portfolio")
 row1=mf_tab.columns(3)
-row1[0].metric('Investment',mf_consolidated_data['investment'])
-row1[1].metric('Current Value',mf_consolidated_data['current_value'])
-row1[2].metric('P/L Amt',mf_consolidated_data['pl_amt'],f"{mf_consolidated_data['pl_pct']}%")
+row1[0].metric('Investment',locale.currency(mf_consolidated_data['investment'],grouping=True))
+row1[1].metric('Current Value',locale.currency(mf_consolidated_data['current_value'],grouping=True))
+row1[2].metric('P/L Amt',locale.currency(mf_consolidated_data['pl_amt'],grouping=True),f"{mf_consolidated_data['pl_pct']}%")
 row2=mf_tab.columns(4)
 row2[1].metric('XIRR',f"{mf_consolidated_data['xirr']}%")
 row2[2].metric('Number of Funds',len(mf_data))
