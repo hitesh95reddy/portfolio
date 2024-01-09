@@ -68,8 +68,8 @@ st.set_page_config(
 
 st.header("Portfolio")
 row1=st.columns(3)
-row1[0].metric('Investment',consolidated_data['investment']+mf_consolidated_data['investment'])
-row1[1].metric('Current Value',consolidated_data['current_value']+mf_consolidated_data['current_value'])    
+row1[0].metric('Investment',round(consolidated_data['investment']+mf_consolidated_data['investment'],2))
+row1[1].metric('Current Value',round(consolidated_data['current_value']+mf_consolidated_data['current_value'],2))    
 row1[2].metric('P/L Amt',consolidated_data['pl_amt']+mf_consolidated_data['pl_amt'],round((consolidated_data['pl_amt']+mf_consolidated_data['pl_amt'])*100/(consolidated_data['investment']+mf_consolidated_data['investment']),2))
 st.divider()
 
