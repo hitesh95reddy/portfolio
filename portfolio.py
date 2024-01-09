@@ -8,17 +8,6 @@ hide_streamlit_style = """
 <style>
 header {visibility: hidden;padding-top: 0rem;height:0px}
 footer {visibility: hidden;}
-div.viewerBadge_link__qRIco {visibility: hidden;}
-a.viewerBadge_container__r5tak {visibility: hidden;}
-.viewerBadge_container__r5tak {
-    bottom: 0;
-    display: NONE;
-    font-size: .875rem;
-    line-height: 1.25rem;
-    position: fixed;
-    right: 0;
-    z-index: 0;
-}
 </style>
 """
 def load_data():
