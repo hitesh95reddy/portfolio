@@ -4,6 +4,12 @@ import json
 import os
 import plotly.express as px
 
+hide_streamlit_style = """
+<style>
+header {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
+"""
 def load_data():
     # equities
     data=json.load(open("data.json"))
@@ -86,9 +92,10 @@ data,consolidated_data,mf_data,mf_consolidated_data,ic_data,ic_consolidated_data
 st.set_page_config(
     page_title="PortFolio",
     page_icon="💸",
-    layout="wide"
+    layout="wide",
+    menu_items=None
 )
-
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.header("Portfolio")
 row1=st.columns(3)
 row1[0].metric('Investment',round(consolidated_data['investment']+mf_consolidated_data['investment']+ic_consolidated_data['investment'],2))
