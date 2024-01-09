@@ -97,7 +97,7 @@ st.set_page_config(
 )
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.header("Portfolio")
-locale.setlocale( locale.LC_ALL, 'en_US.UTF-8' )
+locale.setlocale( locale.LC_ALL, 'English_India.1252' )
 row1=st.columns(3)
 row1[0].metric('Investment',locale.currency(round(consolidated_data['investment']+mf_consolidated_data['investment']+ic_consolidated_data['investment'],2),grouping=True))
 row1[1].metric('Current Value',locale.currency(round(consolidated_data['current_value']+mf_consolidated_data['current_value']+ic_consolidated_data['current_value'],2),grouping=True))   
