@@ -56,9 +56,32 @@ def load_data():
                 } 
                 for i in mf_data['schemeView']['results']
             ]
-    return data,consolidated_data,mf_data,mf_consolidated_data
+    ic_data_csv=pd.read_csv("ic_data.csv")
+    ic_data=[
+        {
+            'isin_code':ic_data_csv['ISIN Code'][i],
+            'display_name':ic_data_csv['Company Name'][i],
+            'quantity' : int(ic_data_csv['Qty'][i]),
+            'purchase_price' : round(float(ic_data_csv['Average Cost Price'][i]),2),
+            'cmp' : round(float(ic_data_csv['Current Market Price'][i]),2),
+            'investment' : round(float(ic_data_csv['Value At Cost'][i]),2),
+            'current_value' : round(float(ic_data_csv['Value At Market Price'][i]),2),
+            'pl_amt' : round(float(ic_data_csv['Unrealized Profit/Loss'][i]),2),
+            'pl_pct' : round(float(str(ic_data_csv['Unrealized Profit/Loss %'][i]).replace("(","-").replace(")","")),2),
+        } 
+        for i in range(ic_data_csv.shape[0])]
+    ic_consolidated_data={'investment':0,'current_value':0,'pl_amt':0,'pl_pct':0,'num_stocks':0}
+    for i in ic_data:
+        ic_consolidated_data['investment']+=i['investment']
+        ic_consolidated_data['current_value']+=i['current_value']
+        ic_consolidated_data['pl_amt']+=i['pl_amt']
+        ic_consolidated_data['num_stocks']+=1
+    ic_consolidated_data['pl_pct']=round(ic_consolidated_data['pl_amt']*100/ic_consolidated_data['investment'],2)
+    ic_consolidated_data={k:round(v,2) for k,v in ic_consolidated_data.items()}
+    
+    return data,consolidated_data,mf_data,mf_consolidated_data,ic_data,ic_consolidated_data
 
-data,consolidated_data,mf_data,mf_consolidated_data=load_data()
+data,consolidated_data,mf_data,mf_consolidated_data,ic_data,ic_consolidated_data=load_data()
 
 st.set_page_config(
     page_title="PortFolio",
@@ -68,13 +91,13 @@ st.set_page_config(
 
 st.header("Portfolio")
 row1=st.columns(3)
-row1[0].metric('Investment',round(consolidated_data['investment']+mf_consolidated_data['investment'],2))
-row1[1].metric('Current Value',round(consolidated_data['current_value']+mf_consolidated_data['current_value'],2))    
-row1[2].metric('P/L Amt',consolidated_data['pl_amt']+mf_consolidated_data['pl_amt'],round((consolidated_data['pl_amt']+mf_consolidated_data['pl_amt'])*100/(consolidated_data['investment']+mf_consolidated_data['investment']),2))
+row1[0].metric('Investment',round(consolidated_data['investment']+mf_consolidated_data['investment']+ic_consolidated_data['investment'],2))
+row1[1].metric('Current Value',round(consolidated_data['current_value']+mf_consolidated_data['current_value']+ic_consolidated_data['current_value'],2))    
+row1[2].metric('P/L Amt',consolidated_data['pl_amt']+mf_consolidated_data['pl_amt']+ic_consolidated_data['pl_amt'],round((consolidated_data['pl_amt']+mf_consolidated_data['pl_amt']+ic_consolidated_data['pl_amt'])*100/(consolidated_data['investment']+mf_consolidated_data['investment']+ic_consolidated_data['investment']),2))
 st.divider()
 
-eq_tb,mf_tab=st.tabs(["Equity Portfolio", "Mutual Fund Portfolio"])
-
+eq_tb,ic_eq_tb,mf_tab=st.tabs(["Equity Portfolio","Cov Eq Portfolio", "Mutual Fund Portfolio"])
+##############################################
 df = pd.DataFrame.from_dict(data)
 eq_tb.header("Equity Portfolio")
 row1=eq_tb.columns(3)
@@ -138,8 +161,30 @@ if eq_tb.checkbox('Equity Portfolio details',value=True):
         fig.update_traces(textposition='inside', textinfo='percent+label')
         tab3.plotly_chart(fig)
     eq_tb.divider()
-    
+##############################################    
+##############################################
+ic_eq_df = pd.DataFrame.from_dict(ic_data)
+ic_eq_tb.header("IC Equity Portfolio")
+row1=ic_eq_tb.columns(3)
+row1[0].metric('Investment',ic_consolidated_data['investment'])
+row1[1].metric('Current Value',ic_consolidated_data['current_value'])
+row1[2].metric('P/L Amt',ic_consolidated_data['pl_amt'],ic_consolidated_data['pl_pct'])
+row2=ic_eq_tb.columns(3)
+row2[1].metric('Number of Stocks',ic_consolidated_data['num_stocks'])
+ic_eq_tb.divider()
+if ic_eq_tb.checkbox('IC Equity Portfolio details',value=True):
+    tab1, tab2 = ic_eq_tb.tabs(["Tabular", "Pie Chart"])
+    with tab1:
+        tab1.dataframe(ic_eq_df,hide_index=True)
+    with tab2:
+        fig = px.pie(ic_eq_df, values='investment', names='display_name',
+            title='Investments by company')
+        fig.update_traces(textposition='inside', textinfo='percent+label')
+        ic_eq_tb.plotly_chart(fig)
 
+
+##############################################
+##############################################
 mf_tab.header("Mutual Fund Portfolio")
 row1=mf_tab.columns(3)
 row1[0].metric('Investment',mf_consolidated_data['investment'])
