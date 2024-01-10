@@ -103,10 +103,10 @@ row1[1].metric('Current Value',round(consolidated_data['current_value']+mf_conso
 row1[2].metric('P/L Amt',consolidated_data['pl_amt']+mf_consolidated_data['pl_amt']+ic_consolidated_data['pl_amt'],f"{round((consolidated_data['pl_amt']+mf_consolidated_data['pl_amt']+ic_consolidated_data['pl_amt'])*100/(consolidated_data['investment']+mf_consolidated_data['investment']+ic_consolidated_data['investment']),2)}%")
 st.divider()
 
-companies_tab,eq_tb,ic_eq_tb,mf_tab=st.tabs(["Consolidated Equity Portfolio","Pay Equity Portfolio","Cov Eq Portfolio", "Mutual Fund Portfolio"])
+companies_tab,eq_tb,ic_eq_tb,mf_tab=st.tabs(["Consolidated Equity Portfolio","PayT Equity Portfolio","Cov Eq Portfolio", "MF Portfolio"])
 ##############################################
 df = pd.DataFrame.from_dict(data)
-eq_tb.header("Equity Portfolio")
+eq_tb.header("PayT Equity Portfolio")
 row1=eq_tb.columns(3)
 row1[0].metric('Investment',consolidated_data['investment'])
 row1[1].metric('Current Value',consolidated_data['current_value'])
