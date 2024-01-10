@@ -103,7 +103,7 @@ row1[1].metric('Current Value',round(consolidated_data['current_value']+mf_conso
 row1[2].metric('P/L Amt',consolidated_data['pl_amt']+mf_consolidated_data['pl_amt']+ic_consolidated_data['pl_amt'],f"{round((consolidated_data['pl_amt']+mf_consolidated_data['pl_amt']+ic_consolidated_data['pl_amt'])*100/(consolidated_data['investment']+mf_consolidated_data['investment']+ic_consolidated_data['investment']),2)}%")
 st.divider()
 
-eq_tb,ic_eq_tb,mf_tab=st.tabs(["Equity Portfolio","Cov Eq Portfolio", "Mutual Fund Portfolio"])
+companies_tab,eq_tb,ic_eq_tb,mf_tab=st.tabs(["Consolidated Equity Portfolio","Pay Equity Portfolio","Cov Eq Portfolio", "Mutual Fund Portfolio"])
 ##############################################
 df = pd.DataFrame.from_dict(data)
 eq_tb.header("Equity Portfolio")
@@ -214,3 +214,62 @@ with tab3:
             title='Investments by MF House')
     fig.update_traces(textposition='inside', textinfo='percent+label')
     tab3.plotly_chart(fig)
+
+all_data=data+ic_data
+unique_isin_codes=list(set([i['isin_code'] for i in all_data]))
+all_holdings={}
+for holding in all_data:
+    if holding['isin_code'] not in all_holdings:
+        all_holdings[holding['isin_code']]={'isin_code':holding['isin_code'],
+                                            'display_name':holding['display_name'],
+                                            'quantity':holding['quantity'],
+                                            'purchase_price':holding['purchase_price'],
+                                            'cmp':holding['cmp'],
+                                            'investment':holding['investment'],
+                                            'current_value':holding['current_value'],
+                                            'pl_amt':holding['pl_amt'],
+                                            'pl_pct':holding['pl_pct'],
+                                            }
+    else:
+        all_holdings[holding['isin_code']]['quantity']+=holding['quantity']
+        all_holdings[holding['isin_code']]['investment']+=holding['investment']
+        all_holdings[holding['isin_code']]['current_value']+=holding['current_value']
+        all_holdings[holding['isin_code']]['pl_amt']+=holding['pl_amt']
+        all_holdings[holding['isin_code']]['cmp']=holding['cmp']
+        all_holdings[holding['isin_code']]['purchase_price']=round(all_holdings[holding['isin_code']]['investment']/all_holdings[holding['isin_code']]['quantity'],2)
+        all_holdings[holding['isin_code']]['pl_pct']=round(all_holdings[holding['isin_code']]['pl_amt']*100/all_holdings[holding['isin_code']]['investment'],2)
+
+all_data=pd.DataFrame.from_dict(all_holdings.values())
+companies_tab.header("Consolidated Equity Portfolio")
+companies_tab_tabular,companies_tab_summary=companies_tab.tabs(["Tabular","Summary"])
+companies_tab_tabular.dataframe(all_data,hide_index=True)
+companies_tab_summary.header("Summary")
+col1,col2,col3=companies_tab_summary.columns(3)
+col1.metric(f"No of companies",all_data.shape[0])
+col2.metric(f"No of companies with +ve P/L",all_data[all_data['pl_amt']>0].shape[0])
+col3.metric(f"No of companies with -ve P/L",all_data[all_data['pl_amt']<0].shape[0])
+companies_tab_summary.divider()
+companies_tab_summary.header("MultiBaggers")
+col1,col2,col3,col4,col5,col6=companies_tab_summary.columns(6)
+col1.metric(f"Gains >100%",all_data[all_data['pl_pct']>100].shape[0])
+col2.metric(f"Gains >100% & <200%",all_data[(all_data['pl_pct']>100) & (all_data['pl_pct']<200)].shape[0])
+col3.metric(f"Gains >200% & <300%",all_data[(all_data['pl_pct']>200) & (all_data['pl_pct']<300)].shape[0])
+col4.metric(f"Gains >300% & <400%",all_data[(all_data['pl_pct']>300) & (all_data['pl_pct']<400)].shape[0])
+col5.metric(f"Gains >400% & <500%",all_data[(all_data['pl_pct']>400) & (all_data['pl_pct']<500)].shape[0])
+col6.metric(f"Gains >500%",all_data[all_data['pl_pct']>500].shape[0])
+companies_tab_summary.divider()
+companies_tab_summary.header("Gains")
+col1,col2,col3=companies_tab_summary.columns(3)
+col1.metric(f"Gains >50% & <100%",all_data[(all_data['pl_pct']>50) & (all_data['pl_pct']<100)].shape[0])  
+col2.metric(f"Gains >20% & <50%",all_data[(all_data['pl_pct']>20) & (all_data['pl_pct']<50)].shape[0])
+col3.metric(f"Gains >0% & <20%",all_data[(all_data['pl_pct']>0) & (all_data['pl_pct']<20)].shape[0])
+companies_tab_summary.divider()
+companies_tab_summary.header("Losses")
+col1,col2,col3,col4,col5=companies_tab_summary.columns(5)
+col1.metric(f"Loss >90%",all_data[-1*all_data['pl_pct']>90].shape[0])
+col2.metric(f"Loss >50% & <90%",all_data[(all_data['pl_pct']<-50) & (all_data['pl_pct']>-90)].shape[0])
+col3.metric(f"Loss >20% & <50%",all_data[(all_data['pl_pct']<-20) & (all_data['pl_pct']>-50)].shape[0])
+col4.metric(f"Loss >10% & <20%",all_data[(all_data['pl_pct']<-10) & (all_data['pl_pct']>-20)].shape[0])
+col5.metric(f"Loss >0% & <10%",all_data[(all_data['pl_pct']<-0) & (all_data['pl_pct']>-10)].shape[0])
+
+companies_tab.divider()
