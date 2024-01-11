@@ -215,7 +215,7 @@ if ic_eq_tb.checkbox('IC Equity Portfolio details',value=True):
         fig = px.pie(ic_eq_df, values='investment', names='display_name',
             title='Investments by company')
         fig.update_traces(textposition='inside', textinfo='percent+label')
-        ic_eq_tb.plotly_chart(fig)
+        tab2.plotly_chart(fig)
 
 ##############################################
 ##############################################
@@ -235,8 +235,8 @@ if zdha_eq_tab.checkbox('Zdha Equity Portfolio details',value=True):
     with tab2:
         fig = px.pie(zdha_eq_df, values='investment', names='display_name',
             title='Investments by company')
-        fig.update_traces(textposition='inside', textinfo='percent+label')
-        zdha_eq_tab.plotly_chart(fig)
+        fig.update_traces(textposition='outside', textinfo='percent+label')
+        tab2.plotly_chart(fig)
 ##############################################
 ##############################################
 mf_tab.header("Mutual Fund Portfolio")
@@ -288,7 +288,7 @@ for holding in all_data:
 
 all_data=pd.DataFrame.from_dict(all_holdings.values())
 companies_tab.header("Consolidated Equity Portfolio")
-companies_tab_tabular,companies_tab_summary=companies_tab.tabs(["Tabular","Summary"])
+companies_tab_tabular,companies_tab_summary,companies_tab_pie=companies_tab.tabs(["Tabular","Summary","Pie Chart"])
 companies_tab_tabular.dataframe(all_data,hide_index=True)
 companies_tab_summary.header("Summary")
 col1,col2,col3=companies_tab_summary.columns(3)
@@ -318,5 +318,11 @@ col2.metric(f"Loss >50% & <90%",all_data[(all_data['pl_pct']<-50) & (all_data['p
 col3.metric(f"Loss >20% & <50%",all_data[(all_data['pl_pct']<-20) & (all_data['pl_pct']>-50)].shape[0])
 col4.metric(f"Loss >10% & <20%",all_data[(all_data['pl_pct']<-10) & (all_data['pl_pct']>-20)].shape[0])
 col5.metric(f"Loss >0% & <10%",all_data[(all_data['pl_pct']<-0) & (all_data['pl_pct']>-10)].shape[0])
+
+companies_tab_pie.header("Investments by company")
+fig = px.pie(all_data, values='investment', names='display_name',
+            title='Investments by company')
+fig.update_traces(textposition='inside', textinfo='percent+label')
+companies_tab_pie.plotly_chart(fig)
 
 companies_tab.divider()
