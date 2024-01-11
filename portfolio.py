@@ -96,11 +96,11 @@ def load_zdha_data():
                     'display_name':i['tradingsymbol'],
                     'quantity' : int(i['quantity']),
                     'purchase_price' : round(float(i['average_price']),2),
-                    'cmp' : round(float(i['close_price']),2),
+                    'cmp' : round(float(i['last_price']),2),
                     'investment' : round(int(i['quantity'])*float(i['average_price']),2),
-                    'current_value' : round(int(i['quantity'])*float(i['close_price']),2),
-                    'pl_amt' : round(int(i['quantity'])*(float(i['close_price'])-float(i['average_price'])),2),
-                    'pl_pct' : round((float(i['close_price'])-float(i['average_price']))*100/float(i['average_price']),2),
+                    'current_value' : round(int(i['quantity'])*float(i['last_price']),2),
+                    'pl_amt' : round(int(i['quantity'])*(float(i['last_price'])-float(i['average_price'])),2),
+                    'pl_pct' : round((float(i['last_price'])-float(i['average_price']))*100/float(i['average_price']),2),
                     } 
                for i in zdha_data
             ]
