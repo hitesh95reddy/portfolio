@@ -87,7 +87,35 @@ def load_data():
     
     return data,consolidated_data,mf_data,mf_consolidated_data,ic_data,ic_consolidated_data
 
+def load_zdha_data():
+    zdha_data=json.load(open("zdha_data.json"))
+    zdha_data=zdha_data['data']
+    zdha_data=[
+                {
+                    'isin_code':i['isin'],
+                    'display_name':i['tradingsymbol'],
+                    'quantity' : int(i['quantity']),
+                    'purchase_price' : round(float(i['average_price']),2),
+                    'cmp' : round(float(i['close_price']),2),
+                    'investment' : round(int(i['quantity'])*float(i['average_price']),2),
+                    'current_value' : round(int(i['quantity'])*float(i['close_price']),2),
+                    'pl_amt' : round(int(i['quantity'])*(float(i['close_price'])-float(i['average_price'])),2),
+                    'pl_pct' : round((float(i['close_price'])-float(i['average_price']))*100/float(i['average_price']),2),
+                    } 
+               for i in zdha_data
+            ]
+    zdha_consolidated_data={'investment':0,'current_value':0,'pl_amt':0,'pl_pct':0,'num_stocks':0}
+    for i in zdha_data:
+        zdha_consolidated_data['investment']+=i['investment']
+        zdha_consolidated_data['current_value']+=i['current_value']
+        zdha_consolidated_data['pl_amt']+=i['pl_amt']
+        zdha_consolidated_data['num_stocks']+=1
+    zdha_consolidated_data['pl_pct']=round(zdha_consolidated_data['pl_amt']*100/zdha_consolidated_data['investment'],2)
+    zdha_consolidated_data={k:round(v,2) for k,v in zdha_consolidated_data.items()}
+    return zdha_data,zdha_consolidated_data
+
 data,consolidated_data,mf_data,mf_consolidated_data,ic_data,ic_consolidated_data=load_data()
+zdha_data,zdha_consolidated_data=load_zdha_data()
 
 st.set_page_config(
     page_title="PortFolio",
@@ -98,12 +126,12 @@ st.set_page_config(
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.header("Portfolio")
 row1=st.columns(3)
-row1[0].metric('Investment',round(consolidated_data['investment']+mf_consolidated_data['investment']+ic_consolidated_data['investment'],2))
-row1[1].metric('Current Value',round(consolidated_data['current_value']+mf_consolidated_data['current_value']+ic_consolidated_data['current_value'],2))    
-row1[2].metric('P/L Amt',consolidated_data['pl_amt']+mf_consolidated_data['pl_amt']+ic_consolidated_data['pl_amt'],f"{round((consolidated_data['pl_amt']+mf_consolidated_data['pl_amt']+ic_consolidated_data['pl_amt'])*100/(consolidated_data['investment']+mf_consolidated_data['investment']+ic_consolidated_data['investment']),2)}%")
+row1[0].metric('Investment',round(consolidated_data['investment']+mf_consolidated_data['investment']+ic_consolidated_data['investment']+zdha_consolidated_data['investment'],2))
+row1[1].metric('Current Value',round(consolidated_data['current_value']+mf_consolidated_data['current_value']+ic_consolidated_data['current_value']+zdha_consolidated_data['current_value'],2))    
+row1[2].metric('P/L Amt',consolidated_data['pl_amt']+mf_consolidated_data['pl_amt']+ic_consolidated_data['pl_amt']+zdha_consolidated_data['pl_amt'],f"{round((consolidated_data['pl_amt']+mf_consolidated_data['pl_amt']+ic_consolidated_data['pl_amt'])*100/(consolidated_data['investment']+mf_consolidated_data['investment']+ic_consolidated_data['investment']+zdha_consolidated_data['investment']),2)}%")
 st.divider()
 
-companies_tab,eq_tb,ic_eq_tb,mf_tab=st.tabs(["Consolidated Equity Portfolio","PayT Equity Portfolio","Cov Eq Portfolio", "MF Portfolio"])
+companies_tab,eq_tb,ic_eq_tb,zdha_eq_tab,mf_tab=st.tabs(["Consolidated Equity Portfolio","PayT Equity Portfolio","Cov Eq Portfolio","Zdha Portfolio", "MF Portfolio"])
 ##############################################
 df = pd.DataFrame.from_dict(data)
 eq_tb.header("PayT Equity Portfolio")
@@ -189,7 +217,26 @@ if ic_eq_tb.checkbox('IC Equity Portfolio details',value=True):
         fig.update_traces(textposition='inside', textinfo='percent+label')
         ic_eq_tb.plotly_chart(fig)
 
-
+##############################################
+##############################################
+zdha_eq_df = pd.DataFrame.from_dict(zdha_data)
+zdha_eq_tab.header("Zdha Equity Portfolio")
+row1=zdha_eq_tab.columns(3)
+row1[0].metric('Investment',zdha_consolidated_data['investment'])
+row1[1].metric('Current Value',zdha_consolidated_data['current_value'])
+row1[2].metric('P/L Amt',zdha_consolidated_data['pl_amt'],f"{zdha_consolidated_data['pl_pct']}%")
+row2=zdha_eq_tab.columns(3)
+row2[1].metric('Number of Stocks',zdha_consolidated_data['num_stocks'])
+zdha_eq_tab.divider()
+if zdha_eq_tab.checkbox('Zdha Equity Portfolio details',value=True):
+    tab1, tab2 = zdha_eq_tab.tabs(["Tabular", "Pie Chart"])
+    with tab1:
+        tab1.dataframe(zdha_eq_df,hide_index=True)
+    with tab2:
+        fig = px.pie(zdha_eq_df, values='investment', names='display_name',
+            title='Investments by company')
+        fig.update_traces(textposition='inside', textinfo='percent+label')
+        zdha_eq_tab.plotly_chart(fig)
 ##############################################
 ##############################################
 mf_tab.header("Mutual Fund Portfolio")
@@ -215,7 +262,7 @@ with tab3:
     fig.update_traces(textposition='inside', textinfo='percent+label')
     tab3.plotly_chart(fig)
 
-all_data=data+ic_data
+all_data=data+ic_data+zdha_data
 unique_isin_codes=list(set([i['isin_code'] for i in all_data]))
 all_holdings={}
 for holding in all_data:
