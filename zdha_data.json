@@ -21,11 +21,11 @@
             "collateral_type": "",
             "discrepancy": false,
             "average_price": 48.21,
-            "last_price": 52.88,
+            "last_price": 52.99,
             "close_price": 52.84,
-            "pnl": 46.70000000000002,
-            "day_change": 0.03999999999999915,
-            "day_change_percentage": 0.07570022710067968
+            "pnl": 47.80000000000001,
+            "day_change": 0.14999999999999858,
+            "day_change_percentage": 0.2838758516275522
         },
         {
             "tradingsymbol": "INFY",
@@ -47,11 +47,11 @@
             "collateral_type": "",
             "discrepancy": false,
             "average_price": 1569,
-            "last_price": 1598.2,
+            "last_price": 1612.2,
             "close_price": 1495,
-            "pnl": 29.200000000000045,
-            "day_change": 103.20000000000005,
-            "day_change_percentage": 6.903010033444819
+            "pnl": 43.200000000000045,
+            "day_change": 117.20000000000005,
+            "day_change_percentage": 7.839464882943147
         },
         {
             "tradingsymbol": "ITBEES",
@@ -73,11 +73,11 @@
             "collateral_type": "",
             "discrepancy": false,
             "average_price": 34.05,
-            "last_price": 38.42,
+            "last_price": 38.54,
             "close_price": 36.72,
-            "pnl": 1857.2500000000018,
-            "day_change": 1.7000000000000028,
-            "day_change_percentage": 4.629629629629638
+            "pnl": 1908.250000000001,
+            "day_change": 1.8200000000000003,
+            "day_change_percentage": 4.956427015250545
         },
         {
             "tradingsymbol": "M\u0026M",
@@ -99,11 +99,11 @@
             "collateral_type": "",
             "discrepancy": false,
             "average_price": 1274,
-            "last_price": 1607.45,
+            "last_price": 1622.85,
             "close_price": 1629.8,
-            "pnl": 333.45000000000005,
-            "day_change": -22.34999999999991,
-            "day_change_percentage": -1.3713339060007308
+            "pnl": 348.8499999999999,
+            "day_change": -6.9500000000000455,
+            "day_change_percentage": -0.42643269112774856
         }
     ]
 }
