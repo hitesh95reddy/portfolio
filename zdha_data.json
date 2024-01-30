@@ -3,8 +3,8 @@
     "data": [
         {
             "tradingsymbol": "GOLDBEES",
-            "exchange": "NSE",
-            "instrument_token": 3693569,
+            "exchange": "BSE",
+            "instrument_token": 151064324,
             "isin": "INF204KB17I5",
             "product": "CNC",
             "price": 0,
@@ -13,7 +13,7 @@
             "t1_quantity": 0,
             "realised_quantity": 10,
             "authorised_quantity": 0,
-            "authorised_date": "2024-01-26 00:00:00",
+            "authorised_date": "2024-01-30 00:00:00",
             "authorisation": {},
             "opening_quantity": 10,
             "short_quantity": 0,
@@ -21,11 +21,11 @@
             "collateral_type": "",
             "discrepancy": false,
             "average_price": 48.21,
-            "last_price": 52.72,
-            "close_price": 52.91,
-            "pnl": 45.09999999999998,
-            "day_change": -0.18999999999999773,
-            "day_change_percentage": -0.3591003591003548
+            "last_price": 53.13,
+            "close_price": 52.98,
+            "pnl": 49.20000000000002,
+            "day_change": 0.15000000000000568,
+            "day_change_percentage": 0.28312570781428026
         },
         {
             "tradingsymbol": "INFY",
@@ -39,7 +39,7 @@
             "t1_quantity": 0,
             "realised_quantity": 1,
             "authorised_quantity": 0,
-            "authorised_date": "2024-01-26 00:00:00",
+            "authorised_date": "2024-01-30 00:00:00",
             "authorisation": {},
             "opening_quantity": 1,
             "short_quantity": 0,
@@ -47,11 +47,11 @@
             "collateral_type": "",
             "discrepancy": false,
             "average_price": 1569,
-            "last_price": 1669.1,
-            "close_price": 1675.4,
-            "pnl": 100.09999999999991,
-            "day_change": -6.300000000000182,
-            "day_change_percentage": -0.37602960487048953
+            "last_price": 1651.45,
+            "close_price": 1656.6,
+            "pnl": 82.45000000000005,
+            "day_change": -5.149999999999864,
+            "day_change_percentage": -0.3108777013159401
         },
         {
             "tradingsymbol": "ITBEES",
@@ -65,7 +65,7 @@
             "t1_quantity": 0,
             "realised_quantity": 425,
             "authorised_quantity": 0,
-            "authorised_date": "2024-01-26 00:00:00",
+            "authorised_date": "2024-01-30 00:00:00",
             "authorisation": {},
             "opening_quantity": 425,
             "short_quantity": 0,
@@ -73,11 +73,11 @@
             "collateral_type": "",
             "discrepancy": false,
             "average_price": 34.05,
-            "last_price": 38.68,
-            "close_price": 39.27,
-            "pnl": 1967.7500000000011,
-            "day_change": -0.5900000000000034,
-            "day_change_percentage": -1.5024191494779815
+            "last_price": 38.61,
+            "close_price": 38.69,
+            "pnl": 1938.000000000001,
+            "day_change": -0.0799999999999983,
+            "day_change_percentage": -0.20677177565261903
         },
         {
             "tradingsymbol": "M\u0026M",
@@ -91,7 +91,7 @@
             "t1_quantity": 0,
             "realised_quantity": 1,
             "authorised_quantity": 0,
-            "authorised_date": "2024-01-26 00:00:00",
+            "authorised_date": "2024-01-30 00:00:00",
             "authorisation": {},
             "opening_quantity": 1,
             "short_quantity": 0,
@@ -99,11 +99,11 @@
             "collateral_type": "",
             "discrepancy": false,
             "average_price": 1274,
-            "last_price": 1635.5,
-            "close_price": 1628.1,
-            "pnl": 361.5,
-            "day_change": 7.400000000000091,
-            "day_change_percentage": 0.45451753577790627
+            "last_price": 1620.35,
+            "close_price": 1640,
+            "pnl": 346.3499999999999,
+            "day_change": -19.65000000000009,
+            "day_change_percentage": -1.1981707317073227
         }
     ]
 }
