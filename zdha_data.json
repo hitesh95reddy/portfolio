@@ -13,7 +13,7 @@
             "t1_quantity": 0,
             "realised_quantity": 10,
             "authorised_quantity": 0,
-            "authorised_date": "2024-02-15 00:00:00",
+            "authorised_date": "2024-02-19 00:00:00",
             "authorisation": {},
             "opening_quantity": 10,
             "short_quantity": 0,
@@ -21,16 +21,16 @@
             "collateral_type": "",
             "discrepancy": false,
             "average_price": 48.21,
-            "last_price": 52.17,
-            "close_price": 52.1,
-            "pnl": 39.60000000000001,
-            "day_change": 0.07000000000000028,
-            "day_change_percentage": 0.13435700575815793
+            "last_price": 52.64,
+            "close_price": 52.35,
+            "pnl": 44.3,
+            "day_change": 0.28999999999999915,
+            "day_change_percentage": 0.5539637058261684
         },
         {
             "tradingsymbol": "INFY",
-            "exchange": "NSE",
-            "instrument_token": 408065,
+            "exchange": "BSE",
+            "instrument_token": 128053508,
             "isin": "INE009A01021",
             "product": "CNC",
             "price": 0,
@@ -39,7 +39,7 @@
             "t1_quantity": 0,
             "realised_quantity": 1,
             "authorised_quantity": 0,
-            "authorised_date": "2024-02-15 00:00:00",
+            "authorised_date": "2024-02-19 00:00:00",
             "authorisation": {},
             "opening_quantity": 1,
             "short_quantity": 0,
@@ -47,11 +47,11 @@
             "collateral_type": "",
             "discrepancy": false,
             "average_price": 1569,
-            "last_price": 1676.35,
-            "close_price": 1666.2,
-            "pnl": 107.34999999999991,
-            "day_change": 10.149999999999864,
-            "day_change_percentage": 0.6091705677589644
+            "last_price": 1699.45,
+            "close_price": 1702.4,
+            "pnl": 130.45000000000005,
+            "day_change": -2.9500000000000455,
+            "day_change_percentage": -0.1732847744360929
         },
         {
             "tradingsymbol": "ITBEES",
@@ -65,7 +65,7 @@
             "t1_quantity": 0,
             "realised_quantity": 425,
             "authorised_quantity": 0,
-            "authorised_date": "2024-02-15 00:00:00",
+            "authorised_date": "2024-02-19 00:00:00",
             "authorisation": {},
             "opening_quantity": 425,
             "short_quantity": 0,
@@ -73,11 +73,11 @@
             "collateral_type": "",
             "discrepancy": false,
             "average_price": 34.05,
-            "last_price": 40.2,
-            "close_price": 40.02,
-            "pnl": 2613.7500000000023,
-            "day_change": 0.17999999999999972,
-            "day_change_percentage": 0.4497751124437774
+            "last_price": 40.58,
+            "close_price": 40.7,
+            "pnl": 2775.2500000000005,
+            "day_change": -0.12000000000000455,
+            "day_change_percentage": -0.294840294840306
         },
         {
             "tradingsymbol": "M\u0026M",
@@ -91,7 +91,7 @@
             "t1_quantity": 0,
             "realised_quantity": 1,
             "authorised_quantity": 0,
-            "authorised_date": "2024-02-15 00:00:00",
+            "authorised_date": "2024-02-19 00:00:00",
             "authorisation": {},
             "opening_quantity": 1,
             "short_quantity": 0,
@@ -99,11 +99,11 @@
             "collateral_type": "",
             "discrepancy": false,
             "average_price": 1274,
-            "last_price": 1765.55,
-            "close_price": 1657.6,
-            "pnl": 491.54999999999995,
-            "day_change": 107.95000000000005,
-            "day_change_percentage": 6.512427606177609
+            "last_price": 1848.85,
+            "close_price": 1835.55,
+            "pnl": 574.8499999999999,
+            "day_change": 13.299999999999955,
+            "day_change_percentage": 0.7245784642205308
         }
     ]
 }
