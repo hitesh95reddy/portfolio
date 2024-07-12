@@ -3,8 +3,8 @@
     "data": [
         {
             "tradingsymbol": "GOLDBEES",
-            "exchange": "NSE",
-            "instrument_token": 3693569,
+            "exchange": "BSE",
+            "instrument_token": 151064324,
             "isin": "INF204KB17I5",
             "product": "CNC",
             "price": 0,
@@ -13,7 +13,7 @@
             "t1_quantity": 0,
             "realised_quantity": 10,
             "authorised_quantity": 0,
-            "authorised_date": "2024-07-04 00:00:00",
+            "authorised_date": "2024-07-12 00:00:00",
             "authorisation": {},
             "opening_quantity": 10,
             "short_quantity": 0,
@@ -21,11 +21,11 @@
             "collateral_type": "",
             "discrepancy": false,
             "average_price": 48.21,
-            "last_price": 61.29,
-            "close_price": 61.07,
-            "pnl": 130.79999999999998,
-            "day_change": 0.21999999999999886,
-            "day_change_percentage": 0.36024234485017004
+            "last_price": 61.68,
+            "close_price": 61.68,
+            "pnl": 134.7,
+            "day_change": 0,
+            "day_change_percentage": 0
         },
         {
             "tradingsymbol": "INFY",
@@ -39,7 +39,7 @@
             "t1_quantity": 0,
             "realised_quantity": 1,
             "authorised_quantity": 0,
-            "authorised_date": "2024-07-04 00:00:00",
+            "authorised_date": "2024-07-12 00:00:00",
             "authorisation": {},
             "opening_quantity": 1,
             "short_quantity": 0,
@@ -47,11 +47,11 @@
             "collateral_type": "",
             "discrepancy": false,
             "average_price": 1569,
-            "last_price": 1649.15,
-            "close_price": 1627.6,
-            "pnl": 80.15000000000009,
-            "day_change": 21.550000000000182,
-            "day_change_percentage": 1.3240353895306085
+            "last_price": 1653.05,
+            "close_price": 1653.05,
+            "pnl": 84.04999999999995,
+            "day_change": 0,
+            "day_change_percentage": 0
         },
         {
             "tradingsymbol": "ITBEES",
@@ -65,7 +65,7 @@
             "t1_quantity": 0,
             "realised_quantity": 425,
             "authorised_quantity": 0,
-            "authorised_date": "2024-07-04 00:00:00",
+            "authorised_date": "2024-07-12 00:00:00",
             "authorisation": {},
             "opening_quantity": 425,
             "short_quantity": 0,
@@ -73,16 +73,16 @@
             "collateral_type": "",
             "discrepancy": false,
             "average_price": 34.05,
-            "last_price": 40.23,
-            "close_price": 39.78,
-            "pnl": 2626.5,
-            "day_change": 0.44999999999999574,
-            "day_change_percentage": 1.131221719457003
+            "last_price": 39.81,
+            "close_price": 39.81,
+            "pnl": 2448.0000000000023,
+            "day_change": 0,
+            "day_change_percentage": 0
         },
         {
             "tradingsymbol": "M\u0026M",
-            "exchange": "NSE",
-            "instrument_token": 519937,
+            "exchange": "BSE",
+            "instrument_token": 128133124,
             "isin": "INE101A01026",
             "product": "CNC",
             "price": 0,
@@ -91,7 +91,7 @@
             "t1_quantity": 0,
             "realised_quantity": 1,
             "authorised_quantity": 0,
-            "authorised_date": "2024-07-04 00:00:00",
+            "authorised_date": "2024-07-12 00:00:00",
             "authorisation": {},
             "opening_quantity": 1,
             "short_quantity": 0,
@@ -99,11 +99,11 @@
             "collateral_type": "",
             "discrepancy": false,
             "average_price": 1274,
-            "last_price": 2902.8,
-            "close_price": 2877.95,
-            "pnl": 1628.8000000000002,
-            "day_change": 24.850000000000364,
-            "day_change_percentage": 0.8634618391563567
+            "last_price": 2698.3,
+            "close_price": 2698.3,
+            "pnl": 1424.3000000000002,
+            "day_change": 0,
+            "day_change_percentage": 0
         }
     ]
 }
