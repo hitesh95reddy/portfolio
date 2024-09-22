@@ -1,12 +1,4 @@
 {
-    "meta": {
-        "code": "PM_WEB_SC_200100",
-        "message": "success",
-        "displayMessage": null,
-        "requestId": "71022180-7895-11ef-b319-dd6898f30eb1",
-        "responseId": "6fde8910-7895-11ef-a365-49602eb651d7"
-    },
-    "data": {
         "portfolioDetails": {
             "userId": 244173848,
             "totalInvestedAmount": 949299.9934,
@@ -1203,4 +1195,3 @@
             }
         }
     }
-}
