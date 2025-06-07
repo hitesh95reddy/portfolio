@@ -1,20 +1,20 @@
-{
+ {
         "portfolioDetails": {
             "userId": 244173848,
-            "totalInvestedAmount": 979299.9934,
-            "totalCurrentValue": 1343621.9067,
-            "totalReturns": 364321.9133,
-            "totalReturnsPercentage": 37.2023,
-            "absoluteDayReturn": -14469.1177,
-            "absoluteDayReturnPercentage": -1.0654,
-            "navAsOnDate": 1740594600000,
-            "navUpdatedAtDate": 1740679968000,
-            "portfolioUpdatedAtDate": 1740679968000,
+            "totalInvestedAmount": 981899.9934,
+            "totalCurrentValue": 1496124.3548,
+            "totalReturns": 514224.3614,
+            "totalReturnsPercentage": 52.3703,
+            "absoluteDayReturn": 10209.3123,
+            "absoluteDayReturnPercentage": 0.8012,
+            "navAsOnDate": 1749148200000,
+            "navUpdatedAtDate": 1749231689000,
+            "portfolioUpdatedAtDate": 1749231689000,
             "createdDate": null,
             "updatedDate": null,
             "status": 1,
             "cagr": null,
-            "xirr": 15.0521
+            "xirr": 18.0524
         },
         "schemeView": {
             "results": [
@@ -24,7 +24,7 @@
                         "name": "Canara Robeco Small Cap Fund Direct - Growth",
                         "primaryCategory": "Equity",
                         "subCategory": "Small Cap",
-                        "navVal": 36.13,
+                        "navVal": 42.7,
                         "riskometer": {
                             "id": 5,
                             "name": "High"
@@ -33,7 +33,7 @@
                             {
                                 "provider": "Value Research",
                                 "type": "Overall",
-                                "rating": 4
+                                "rating": 3
                             }
                         ],
                         "imgUrl": "https://static.paytmmoney.com/amc-logo/CANRB.png",
@@ -49,23 +49,23 @@
                         "isin": "INF760K01JC6",
                         "isinName": "Canara Robeco Small Cap Fund Direct - Growth",
                         "isInstaRedemptionSupported": 0,
-                        "totalInvestedAmount": 316000,
-                        "totalAllocatedUnits": 11790.734,
-                        "averageCostNav": 26.8007,
-                        "totalCurrentValue": 425999.2194,
-                        "totalReturns": 109999.2194,
-                        "totalReturnsPercentage": 34.8099,
-                        "absoluteDayReturn": -7899.7918,
-                        "absoluteDayReturnPercentage": -1.8207,
-                        "navAsOnDate": 1740594600000,
-                        "navUpdatedAtDate": 1740678211000,
-                        "portfolioUpdatedAtDate": 1740678211000,
+                        "totalInvestedAmount": 317000,
+                        "totalAllocatedUnits": 11815.005,
+                        "averageCostNav": 26.8303,
+                        "totalCurrentValue": 504500.7135,
+                        "totalReturns": 187500.7135,
+                        "totalReturnsPercentage": 59.1485,
+                        "absoluteDayReturn": 4017.1017,
+                        "absoluteDayReturnPercentage": 0.8026,
+                        "navAsOnDate": 1749148200000,
+                        "navUpdatedAtDate": 1749231689000,
+                        "portfolioUpdatedAtDate": 1749231689000,
                         "cagr": null,
-                        "xirr": null,
+                        "xirr": 21.0816,
                         "exitLoad": null,
                         "taxImplications": null,
                         "createdDate": 1624119222000,
-                        "updatedDate": 1740678211000,
+                        "updatedDate": 1749231689000,
                         "status": null,
                         "schemeType": null,
                         "amountToBeSaved": null,
@@ -94,7 +94,7 @@
                         "name": "Tata Digital India Fund Direct-Growth",
                         "primaryCategory": "Equity",
                         "subCategory": "Technology",
-                        "navVal": 54.8921,
+                        "navVal": 55.3375,
                         "riskometer": {
                             "id": 5,
                             "name": "High"
@@ -113,337 +113,23 @@
                         "isin": "INF277K01Z77",
                         "isinName": "Tata Digital India Fund Direct-Growth",
                         "isInstaRedemptionSupported": 0,
-                        "totalInvestedAmount": 112500,
-                        "totalAllocatedUnits": 3004.138,
-                        "averageCostNav": 37.4483,
-                        "totalCurrentValue": 164903.4435,
-                        "totalReturns": 52403.4435,
-                        "totalReturnsPercentage": 46.5808,
-                        "absoluteDayReturn": -720.9931,
-                        "absoluteDayReturnPercentage": -0.4353,
-                        "navAsOnDate": 1740594600000,
-                        "navUpdatedAtDate": 1740679968000,
-                        "portfolioUpdatedAtDate": 1740679968000,
+                        "totalInvestedAmount": 112600,
+                        "totalAllocatedUnits": 3005.971,
+                        "averageCostNav": 37.4588,
+                        "totalCurrentValue": 166342.9202,
+                        "totalReturns": 53742.9202,
+                        "totalReturnsPercentage": 47.7291,
+                        "absoluteDayReturn": 858.2047,
+                        "absoluteDayReturnPercentage": 0.5186,
+                        "navAsOnDate": 1749148200000,
+                        "navUpdatedAtDate": 1749231689000,
+                        "portfolioUpdatedAtDate": 1749231689000,
                         "cagr": null,
-                        "xirr": null,
+                        "xirr": 16.0766,
                         "exitLoad": null,
                         "taxImplications": null,
                         "createdDate": 1624119221000,
-                        "updatedDate": 1740679968000,
-                        "status": null,
-                        "schemeType": null,
-                        "amountToBeSaved": null,
-                        "message": "",
-                        "altMessage": "",
-                        "savingsMessage": "",
-                        "lockInApplicable": false,
-                        "switchInProgress": false,
-                        "eligibleForSwitch": false,
-                        "isPartialData": false
-                    },
-                    "portfolioSipDetails": {
-                        "sipStatus": [
-                            "Active"
-                        ],
-                        "sipCountMap": {
-                            "Active": 2
-                        }
-                    },
-                    "folioDetails": null,
-                    "userRatings": null
-                },
-                {
-                    "schemeDetails": {
-                        "isin": "INF200KA1507",
-                        "name": "SBI Banking & Financial Services Fund Direct-Growth",
-                        "primaryCategory": "Equity",
-                        "subCategory": "Banking",
-                        "navVal": 40.2543,
-                        "riskometer": {
-                            "id": 5,
-                            "name": "High"
-                        },
-                        "ratings": [],
-                        "imgUrl": "https://static.paytmmoney.com/amc-logo/SBIMF.png",
-                        "riskometer2": {
-                            "id": 6,
-                            "name": "Very High"
-                        }
-                    },
-                    "investmentDetails": {
-                        "userId": 244173848,
-                        "panNumber": null,
-                        "panAlias": null,
-                        "isin": "INF200KA1507",
-                        "isinName": "SBI Banking & Financial Services Fund Direct-Growth",
-                        "isInstaRedemptionSupported": 0,
-                        "totalInvestedAmount": 51000,
-                        "totalAllocatedUnits": 2003.088,
-                        "averageCostNav": 25.4607,
-                        "totalCurrentValue": 80632.9053,
-                        "totalReturns": 29632.9053,
-                        "totalReturnsPercentage": 58.1037,
-                        "absoluteDayReturn": -8.6133,
-                        "absoluteDayReturnPercentage": -0.0107,
-                        "navAsOnDate": 1740594600000,
-                        "navUpdatedAtDate": 1740678211000,
-                        "portfolioUpdatedAtDate": 1740678211000,
-                        "cagr": null,
-                        "xirr": null,
-                        "exitLoad": null,
-                        "taxImplications": null,
-                        "createdDate": 1624119213000,
-                        "updatedDate": 1740678211000,
-                        "status": null,
-                        "schemeType": null,
-                        "amountToBeSaved": null,
-                        "message": "",
-                        "altMessage": "",
-                        "savingsMessage": "",
-                        "lockInApplicable": false,
-                        "switchInProgress": false,
-                        "eligibleForSwitch": false,
-                        "isPartialData": false
-                    },
-                    "portfolioSipDetails": {
-                        "sipStatus": [],
-                        "sipCountMap": {}
-                    },
-                    "folioDetails": null,
-                    "userRatings": null
-                },
-                {
-                    "schemeDetails": {
-                        "isin": "INF109K01Z71",
-                        "name": "ICICI Prudential US Bluechip Equity Direct Plan-Growth",
-                        "primaryCategory": "Equity",
-                        "subCategory": "International",
-                        "navVal": 69.39,
-                        "riskometer": {
-                            "id": 5,
-                            "name": "High"
-                        },
-                        "ratings": [],
-                        "imgUrl": "https://static.paytmmoney.com/amc-logo/ICIPR.png",
-                        "riskometer2": {
-                            "id": 6,
-                            "name": "Very High"
-                        }
-                    },
-                    "investmentDetails": {
-                        "userId": 244173848,
-                        "panNumber": null,
-                        "panAlias": null,
-                        "isin": "INF109K01Z71",
-                        "isinName": "ICICI Prudential US Bluechip Equity Direct Plan-Growth",
-                        "isInstaRedemptionSupported": 0,
-                        "totalInvestedAmount": 81000,
-                        "totalAllocatedUnits": 1537.111,
-                        "averageCostNav": 52.6963,
-                        "totalCurrentValue": 106660.1323,
-                        "totalReturns": 25660.1323,
-                        "totalReturnsPercentage": 31.6792,
-                        "absoluteDayReturn": -1690.8221,
-                        "absoluteDayReturnPercentage": -1.5605,
-                        "navAsOnDate": 1740594600000,
-                        "navUpdatedAtDate": 1740670200000,
-                        "portfolioUpdatedAtDate": 1740670200000,
-                        "cagr": null,
-                        "xirr": null,
-                        "exitLoad": null,
-                        "taxImplications": null,
-                        "createdDate": 1624119210000,
-                        "updatedDate": 1740670200000,
-                        "status": null,
-                        "schemeType": null,
-                        "amountToBeSaved": null,
-                        "message": "",
-                        "altMessage": "",
-                        "savingsMessage": "",
-                        "lockInApplicable": false,
-                        "switchInProgress": false,
-                        "eligibleForSwitch": false,
-                        "isPartialData": false
-                    },
-                    "portfolioSipDetails": {
-                        "sipStatus": [
-                            "Active"
-                        ],
-                        "sipCountMap": {
-                            "Active": 2
-                        }
-                    },
-                    "folioDetails": null,
-                    "userRatings": null
-                },
-                {
-                    "schemeDetails": {
-                        "isin": "INF109K01Y80",
-                        "name": "ICICI Prudential Nifty Next 50 Index Direct-Growth",
-                        "primaryCategory": "Equity",
-                        "subCategory": "Large Cap",
-                        "navVal": 54.2774,
-                        "riskometer": {
-                            "id": 5,
-                            "name": "High"
-                        },
-                        "ratings": [],
-                        "imgUrl": "https://static.paytmmoney.com/amc-logo/ICIPR.png",
-                        "riskometer2": {
-                            "id": 6,
-                            "name": "Very High"
-                        }
-                    },
-                    "investmentDetails": {
-                        "userId": 244173848,
-                        "panNumber": null,
-                        "panAlias": null,
-                        "isin": "INF109K01Y80",
-                        "isinName": "ICICI Prudential Nifty Next 50 Index Direct-Growth",
-                        "isInstaRedemptionSupported": 0,
-                        "totalInvestedAmount": 47500,
-                        "totalAllocatedUnits": 1342.114,
-                        "averageCostNav": 35.3919,
-                        "totalCurrentValue": 72846.4584,
-                        "totalReturns": 25346.4584,
-                        "totalReturnsPercentage": 53.361,
-                        "absoluteDayReturn": -676.6939,
-                        "absoluteDayReturnPercentage": -0.9204,
-                        "navAsOnDate": 1740594600000,
-                        "navUpdatedAtDate": 1740678211000,
-                        "portfolioUpdatedAtDate": 1740678211000,
-                        "cagr": null,
-                        "xirr": null,
-                        "exitLoad": null,
-                        "taxImplications": null,
-                        "createdDate": 1624119209000,
-                        "updatedDate": 1740678211000,
-                        "status": null,
-                        "schemeType": null,
-                        "amountToBeSaved": null,
-                        "message": "",
-                        "altMessage": "",
-                        "savingsMessage": "",
-                        "lockInApplicable": false,
-                        "switchInProgress": false,
-                        "eligibleForSwitch": false,
-                        "isPartialData": false
-                    },
-                    "portfolioSipDetails": {
-                        "sipStatus": [],
-                        "sipCountMap": {}
-                    },
-                    "folioDetails": null,
-                    "userRatings": null
-                },
-                {
-                    "schemeDetails": {
-                        "isin": "INF109KB10X0",
-                        "name": "ICICI Prudential BSE Sensex Index Fund Direct - Growth",
-                        "primaryCategory": "Equity",
-                        "subCategory": "Large Cap",
-                        "navVal": 24.5452,
-                        "riskometer": {
-                            "id": 5,
-                            "name": "High"
-                        },
-                        "ratings": [],
-                        "imgUrl": "https://static.paytmmoney.com/amc-logo/ICIPR.png",
-                        "riskometer2": {
-                            "id": 6,
-                            "name": "Very High"
-                        }
-                    },
-                    "investmentDetails": {
-                        "userId": 244173848,
-                        "panNumber": null,
-                        "panAlias": null,
-                        "isin": "INF109KB10X0",
-                        "isinName": "ICICI Prudential S&P BSE Sensex Index Fund Direct - Growth",
-                        "isInstaRedemptionSupported": 0,
-                        "totalInvestedAmount": 47500,
-                        "totalAllocatedUnits": 2730.72,
-                        "averageCostNav": 17.3947,
-                        "totalCurrentValue": 67026.0685,
-                        "totalReturns": 19526.0685,
-                        "totalReturnsPercentage": 41.1075,
-                        "absoluteDayReturn": 8.1921,
-                        "absoluteDayReturnPercentage": 0.0122,
-                        "navAsOnDate": 1740594600000,
-                        "navUpdatedAtDate": 1740678211000,
-                        "portfolioUpdatedAtDate": 1740678211000,
-                        "cagr": null,
-                        "xirr": null,
-                        "exitLoad": null,
-                        "taxImplications": null,
-                        "createdDate": 1624119211000,
-                        "updatedDate": 1740678211000,
-                        "status": null,
-                        "schemeType": null,
-                        "amountToBeSaved": null,
-                        "message": "",
-                        "altMessage": "",
-                        "savingsMessage": "",
-                        "lockInApplicable": false,
-                        "switchInProgress": false,
-                        "eligibleForSwitch": false,
-                        "isPartialData": false
-                    },
-                    "portfolioSipDetails": {
-                        "sipStatus": [],
-                        "sipCountMap": {}
-                    },
-                    "folioDetails": null,
-                    "userRatings": null
-                },
-                {
-                    "schemeDetails": {
-                        "isin": "INF179K01VX0",
-                        "name": "HDFC Gold Direct Plan-Growth",
-                        "primaryCategory": "Commodities",
-                        "subCategory": "Gold",
-                        "navVal": 27.1023,
-                        "riskometer": {
-                            "id": 5,
-                            "name": "High"
-                        },
-                        "ratings": [
-                            {
-                                "provider": "Value Research",
-                                "type": "Overall",
-                                "rating": 3
-                            }
-                        ],
-                        "imgUrl": "https://static.paytmmoney.com/amc-logo/HDFMF.png",
-                        "riskometer2": {
-                            "id": 5,
-                            "name": "High"
-                        }
-                    },
-                    "investmentDetails": {
-                        "userId": 244173848,
-                        "panNumber": null,
-                        "panAlias": null,
-                        "isin": "INF179K01VX0",
-                        "isinName": "HDFC Gold Direct Plan-Growth",
-                        "isInstaRedemptionSupported": 0,
-                        "totalInvestedAmount": 38000,
-                        "totalAllocatedUnits": 2102.022,
-                        "averageCostNav": 18.0778,
-                        "totalCurrentValue": 56969.6309,
-                        "totalReturns": 18969.6309,
-                        "totalReturnsPercentage": 49.9201,
-                        "absoluteDayReturn": -769.34,
-                        "absoluteDayReturnPercentage": -1.3324,
-                        "navAsOnDate": 1740594600000,
-                        "navUpdatedAtDate": 1740678211000,
-                        "portfolioUpdatedAtDate": 1740678211000,
-                        "cagr": null,
-                        "xirr": null,
-                        "exitLoad": null,
-                        "taxImplications": null,
-                        "createdDate": 1624119212000,
-                        "updatedDate": 1740678211000,
+                        "updatedDate": 1749231689000,
                         "status": null,
                         "schemeType": null,
                         "amountToBeSaved": null,
@@ -468,11 +154,279 @@
                 },
                 {
                     "schemeDetails": {
+                        "isin": "INF200KA1507",
+                        "name": "SBI Banking & Financial Services Fund Direct-Growth",
+                        "primaryCategory": "Equity",
+                        "subCategory": "Banking",
+                        "navVal": 46.8799,
+                        "riskometer": {
+                            "id": 5,
+                            "name": "High"
+                        },
+                        "ratings": [
+                            {
+                                "provider": "Value Research",
+                                "type": "Overall",
+                                "rating": 4
+                            }
+                        ],
+                        "imgUrl": "https://static.paytmmoney.com/amc-logo/SBIMF.png",
+                        "riskometer2": {
+                            "id": 6,
+                            "name": "Very High"
+                        }
+                    },
+                    "investmentDetails": {
+                        "userId": 244173848,
+                        "panNumber": null,
+                        "panAlias": null,
+                        "isin": "INF200KA1507",
+                        "isinName": "SBI Banking & Financial Services Fund Direct-Growth",
+                        "isInstaRedemptionSupported": 0,
+                        "totalInvestedAmount": 51500,
+                        "totalAllocatedUnits": 2014.078,
+                        "averageCostNav": 25.57,
+                        "totalCurrentValue": 94419.7752,
+                        "totalReturns": 42919.7752,
+                        "totalReturnsPercentage": 83.3394,
+                        "absoluteDayReturn": 1845.4996,
+                        "absoluteDayReturnPercentage": 1.9935,
+                        "navAsOnDate": 1749148200000,
+                        "navUpdatedAtDate": 1749231689000,
+                        "portfolioUpdatedAtDate": 1749231689000,
+                        "cagr": null,
+                        "xirr": 21.3096,
+                        "exitLoad": null,
+                        "taxImplications": null,
+                        "createdDate": 1624119213000,
+                        "updatedDate": 1749231689000,
+                        "status": null,
+                        "schemeType": null,
+                        "amountToBeSaved": null,
+                        "message": "",
+                        "altMessage": "",
+                        "savingsMessage": "",
+                        "lockInApplicable": false,
+                        "switchInProgress": false,
+                        "eligibleForSwitch": false,
+                        "isPartialData": false
+                    },
+                    "portfolioSipDetails": {
+                        "sipStatus": [
+                            "Active"
+                        ],
+                        "sipCountMap": {
+                            "Active": 1
+                        }
+                    },
+                    "folioDetails": null,
+                    "userRatings": null
+                },
+                {
+                    "schemeDetails": {
+                        "isin": "INF109K01Y80",
+                        "name": "ICICI Prudential Nifty Next 50 Index Direct-Growth",
+                        "primaryCategory": "Equity",
+                        "subCategory": "Large Cap",
+                        "navVal": 62.804,
+                        "riskometer": {
+                            "id": 5,
+                            "name": "High"
+                        },
+                        "ratings": [
+                            {
+                                "provider": "Value Research",
+                                "type": "Overall",
+                                "rating": 1
+                            }
+                        ],
+                        "imgUrl": "https://static.paytmmoney.com/amc-logo/ICIPR.png",
+                        "riskometer2": {
+                            "id": 6,
+                            "name": "Very High"
+                        }
+                    },
+                    "investmentDetails": {
+                        "userId": 244173848,
+                        "panNumber": null,
+                        "panAlias": null,
+                        "isin": "INF109K01Y80",
+                        "isinName": "ICICI Prudential Nifty Next 50 Index Direct-Growth",
+                        "isInstaRedemptionSupported": 0,
+                        "totalInvestedAmount": 47500,
+                        "totalAllocatedUnits": 1342.114,
+                        "averageCostNav": 35.3919,
+                        "totalCurrentValue": 84290.1277,
+                        "totalReturns": 36790.1277,
+                        "totalReturnsPercentage": 77.4529,
+                        "absoluteDayReturn": 1055.7069,
+                        "absoluteDayReturnPercentage": 1.2684,
+                        "navAsOnDate": 1749148200000,
+                        "navUpdatedAtDate": 1749231689000,
+                        "portfolioUpdatedAtDate": 1749231689000,
+                        "cagr": null,
+                        "xirr": 19.746,
+                        "exitLoad": null,
+                        "taxImplications": null,
+                        "createdDate": 1624119209000,
+                        "updatedDate": 1749231689000,
+                        "status": null,
+                        "schemeType": null,
+                        "amountToBeSaved": null,
+                        "message": "",
+                        "altMessage": "",
+                        "savingsMessage": "",
+                        "lockInApplicable": false,
+                        "switchInProgress": false,
+                        "eligibleForSwitch": false,
+                        "isPartialData": false
+                    },
+                    "portfolioSipDetails": {
+                        "sipStatus": [],
+                        "sipCountMap": {}
+                    },
+                    "folioDetails": null,
+                    "userRatings": null
+                },
+                {
+                    "schemeDetails": {
+                        "isin": "INF109KB10X0",
+                        "name": "ICICI Prudential BSE Sensex Index Fund Direct - Growth",
+                        "primaryCategory": "Equity",
+                        "subCategory": "Large Cap",
+                        "navVal": 27.1207,
+                        "riskometer": {
+                            "id": 5,
+                            "name": "High"
+                        },
+                        "ratings": [
+                            {
+                                "provider": "Value Research",
+                                "type": "Overall",
+                                "rating": 2
+                            }
+                        ],
+                        "imgUrl": "https://static.paytmmoney.com/amc-logo/ICIPR.png",
+                        "riskometer2": {
+                            "id": 6,
+                            "name": "Very High"
+                        }
+                    },
+                    "investmentDetails": {
+                        "userId": 244173848,
+                        "panNumber": null,
+                        "panAlias": null,
+                        "isin": "INF109KB10X0",
+                        "isinName": "ICICI Prudential S&P BSE Sensex Index Fund Direct - Growth",
+                        "isInstaRedemptionSupported": 0,
+                        "totalInvestedAmount": 47500,
+                        "totalAllocatedUnits": 2730.72,
+                        "averageCostNav": 17.3947,
+                        "totalCurrentValue": 74059.0379,
+                        "totalReturns": 26559.0379,
+                        "totalReturnsPercentage": 55.9138,
+                        "absoluteDayReturn": 693.8759,
+                        "absoluteDayReturnPercentage": 0.9458,
+                        "navAsOnDate": 1749148200000,
+                        "navUpdatedAtDate": 1749231689000,
+                        "portfolioUpdatedAtDate": 1749231689000,
+                        "cagr": null,
+                        "xirr": 15.2459,
+                        "exitLoad": null,
+                        "taxImplications": null,
+                        "createdDate": 1624119211000,
+                        "updatedDate": 1749231689000,
+                        "status": null,
+                        "schemeType": null,
+                        "amountToBeSaved": null,
+                        "message": "",
+                        "altMessage": "",
+                        "savingsMessage": "",
+                        "lockInApplicable": false,
+                        "switchInProgress": false,
+                        "eligibleForSwitch": false,
+                        "isPartialData": false
+                    },
+                    "portfolioSipDetails": {
+                        "sipStatus": [],
+                        "sipCountMap": {}
+                    },
+                    "folioDetails": null,
+                    "userRatings": null
+                },
+                {
+                    "schemeDetails": {
+                        "isin": "INF179K01VX0",
+                        "name": "HDFC Gold Direct Plan-Growth",
+                        "primaryCategory": "Gold & Silver",
+                        "subCategory": "Gold",
+                        "navVal": 30.6635,
+                        "riskometer": {
+                            "id": 5,
+                            "name": "High"
+                        },
+                        "ratings": [
+                            {
+                                "provider": "Value Research",
+                                "type": "Overall",
+                                "rating": 3
+                            }
+                        ],
+                        "imgUrl": "https://static.paytmmoney.com/amc-logo/HDFMF.png",
+                        "riskometer2": {
+                            "id": 6,
+                            "name": "Very High"
+                        }
+                    },
+                    "investmentDetails": {
+                        "userId": 244173848,
+                        "panNumber": null,
+                        "panAlias": null,
+                        "isin": "INF179K01VX0",
+                        "isinName": "HDFC Gold Direct Plan-Growth",
+                        "isInstaRedemptionSupported": 0,
+                        "totalInvestedAmount": 38000,
+                        "totalAllocatedUnits": 2102.022,
+                        "averageCostNav": 18.0778,
+                        "totalCurrentValue": 64455.3516,
+                        "totalReturns": 26455.3516,
+                        "totalReturnsPercentage": 69.6193,
+                        "absoluteDayReturn": -484.3059,
+                        "absoluteDayReturnPercentage": -0.7458,
+                        "navAsOnDate": 1749148200000,
+                        "navUpdatedAtDate": 1749231689000,
+                        "portfolioUpdatedAtDate": 1749231689000,
+                        "cagr": null,
+                        "xirr": 20.2009,
+                        "exitLoad": null,
+                        "taxImplications": null,
+                        "createdDate": 1624119212000,
+                        "updatedDate": 1749231689000,
+                        "status": null,
+                        "schemeType": null,
+                        "amountToBeSaved": null,
+                        "message": "",
+                        "altMessage": "",
+                        "savingsMessage": "",
+                        "lockInApplicable": false,
+                        "switchInProgress": false,
+                        "eligibleForSwitch": false,
+                        "isPartialData": false
+                    },
+                    "portfolioSipDetails": {
+                        "sipStatus": [],
+                        "sipCountMap": {}
+                    },
+                    "folioDetails": null,
+                    "userRatings": null
+                },
+                {
+                    "schemeDetails": {
                         "isin": "INF247L01AE7",
                         "name": "Motilal Oswal Nifty 50 Index Fund Direct - Growth",
                         "primaryCategory": "Equity",
                         "subCategory": "Large Cap",
-                        "navVal": 19.354,
+                        "navVal": 21.5186,
                         "riskometer": {
                             "id": 5,
                             "name": "High"
@@ -494,212 +448,20 @@
                         "totalInvestedAmount": 53500,
                         "totalAllocatedUnits": 3590.751,
                         "averageCostNav": 14.8994,
-                        "totalCurrentValue": 69495.3949,
-                        "totalReturns": 15995.3949,
-                        "totalReturnsPercentage": 29.8979,
-                        "absoluteDayReturn": -8.6178,
-                        "absoluteDayReturnPercentage": -0.0124,
-                        "navAsOnDate": 1740594600000,
-                        "navUpdatedAtDate": 1740678211000,
-                        "portfolioUpdatedAtDate": 1740678211000,
+                        "totalCurrentValue": 77267.9345,
+                        "totalReturns": 23767.9345,
+                        "totalReturnsPercentage": 44.426,
+                        "absoluteDayReturn": 775.9613,
+                        "absoluteDayReturnPercentage": 1.0144,
+                        "navAsOnDate": 1749148200000,
+                        "navUpdatedAtDate": 1749231689000,
+                        "portfolioUpdatedAtDate": 1749231689000,
                         "cagr": null,
-                        "xirr": null,
+                        "xirr": 15.5309,
                         "exitLoad": null,
                         "taxImplications": null,
                         "createdDate": 1624119218000,
-                        "updatedDate": 1740678211000,
-                        "status": null,
-                        "schemeType": null,
-                        "amountToBeSaved": null,
-                        "message": "",
-                        "altMessage": "",
-                        "savingsMessage": "",
-                        "lockInApplicable": false,
-                        "switchInProgress": false,
-                        "eligibleForSwitch": false,
-                        "isPartialData": false
-                    },
-                    "portfolioSipDetails": {
-                        "sipStatus": [
-                            "Active"
-                        ],
-                        "sipCountMap": {
-                            "Active": 2
-                        }
-                    },
-                    "folioDetails": null,
-                    "userRatings": null
-                },
-                {
-                    "schemeDetails": {
-                        "isin": "INF769K01IS5",
-                        "name": "Mirae Asset Global X Artificial Intelligence & Technology ETF FoF Direct - Growth",
-                        "primaryCategory": "Equity",
-                        "subCategory": "International",
-                        "navVal": 19.994,
-                        "riskometer": {
-                            "id": 5,
-                            "name": "High"
-                        },
-                        "ratings": [],
-                        "imgUrl": "https://static.paytmmoney.com/amc-logo/MIRAS.png",
-                        "riskometer2": {
-                            "id": 6,
-                            "name": "Very High"
-                        }
-                    },
-                    "investmentDetails": {
-                        "userId": 244173848,
-                        "panNumber": null,
-                        "panAlias": null,
-                        "isin": "INF769K01IS5",
-                        "isinName": "Mirae Asset Global X Artificial Intelligence & Technology ETF FoF Direct - Growth",
-                        "isInstaRedemptionSupported": 0,
-                        "totalInvestedAmount": 38000,
-                        "totalAllocatedUnits": 2608.895,
-                        "averageCostNav": 14.5656,
-                        "totalCurrentValue": 52162.2466,
-                        "totalReturns": 14162.2466,
-                        "totalReturnsPercentage": 37.2691,
-                        "absoluteDayReturn": -980.9446,
-                        "absoluteDayReturnPercentage": -1.8459,
-                        "navAsOnDate": 1740594600000,
-                        "navUpdatedAtDate": 1740670200000,
-                        "portfolioUpdatedAtDate": 1740670200000,
-                        "cagr": null,
-                        "xirr": null,
-                        "exitLoad": null,
-                        "taxImplications": null,
-                        "createdDate": 1691033512000,
-                        "updatedDate": 1740670200000,
-                        "status": null,
-                        "schemeType": null,
-                        "amountToBeSaved": null,
-                        "message": "",
-                        "altMessage": "",
-                        "savingsMessage": "",
-                        "lockInApplicable": false,
-                        "switchInProgress": false,
-                        "eligibleForSwitch": false,
-                        "isPartialData": false
-                    },
-                    "portfolioSipDetails": {
-                        "sipStatus": [
-                            "Paused"
-                        ],
-                        "sipCountMap": {
-                            "Paused": 1
-                        }
-                    },
-                    "folioDetails": null,
-                    "userRatings": null
-                },
-                {
-                    "schemeDetails": {
-                        "isin": "INF247L01AG2",
-                        "name": "Motilal Oswal S&P 500 Index Fund Direct - Growth",
-                        "primaryCategory": "Equity",
-                        "subCategory": "International",
-                        "navVal": 23.5017,
-                        "riskometer": {
-                            "id": 5,
-                            "name": "High"
-                        },
-                        "ratings": [],
-                        "imgUrl": "https://static.paytmmoney.com/amc-logo/MOTOS.png",
-                        "riskometer2": {
-                            "id": 6,
-                            "name": "Very High"
-                        }
-                    },
-                    "investmentDetails": {
-                        "userId": 244173848,
-                        "panNumber": null,
-                        "panAlias": null,
-                        "isin": "INF247L01AG2",
-                        "isinName": "Motilal Oswal S&P 500 Index Fund Direct - Growth",
-                        "isInstaRedemptionSupported": 0,
-                        "totalInvestedAmount": 31500,
-                        "totalAllocatedUnits": 1939.692,
-                        "averageCostNav": 16.2397,
-                        "totalCurrentValue": 45586.0595,
-                        "totalReturns": 14086.0595,
-                        "totalReturnsPercentage": 44.7176,
-                        "absoluteDayReturn": -724.281,
-                        "absoluteDayReturnPercentage": -1.564,
-                        "navAsOnDate": 1740594600000,
-                        "navUpdatedAtDate": 1740670200000,
-                        "portfolioUpdatedAtDate": 1740670200000,
-                        "cagr": null,
-                        "xirr": null,
-                        "exitLoad": null,
-                        "taxImplications": null,
-                        "createdDate": 1624119219000,
-                        "updatedDate": 1740670200000,
-                        "status": null,
-                        "schemeType": null,
-                        "amountToBeSaved": null,
-                        "message": "",
-                        "altMessage": "",
-                        "savingsMessage": "",
-                        "lockInApplicable": false,
-                        "switchInProgress": false,
-                        "eligibleForSwitch": false,
-                        "isPartialData": false
-                    },
-                    "portfolioSipDetails": {
-                        "sipStatus": [
-                            "Paused"
-                        ],
-                        "sipCountMap": {
-                            "Paused": 1
-                        }
-                    },
-                    "folioDetails": null,
-                    "userRatings": null
-                },
-                {
-                    "schemeDetails": {
-                        "isin": "INF247L01718",
-                        "name": "Motilal Oswal Nasdaq 100 FOF Direct - Growth",
-                        "primaryCategory": "Equity",
-                        "subCategory": "International",
-                        "navVal": 41.3601,
-                        "riskometer": {
-                            "id": 5,
-                            "name": "High"
-                        },
-                        "ratings": [],
-                        "imgUrl": "https://static.paytmmoney.com/amc-logo/MOTOS.png",
-                        "riskometer2": {
-                            "id": 6,
-                            "name": "Very High"
-                        }
-                    },
-                    "investmentDetails": {
-                        "userId": 244173848,
-                        "panNumber": null,
-                        "panAlias": null,
-                        "isin": "INF247L01718",
-                        "isinName": "Motilal Oswal Nasdaq 100 FOF Direct - Growth",
-                        "isInstaRedemptionSupported": 0,
-                        "totalInvestedAmount": 10500,
-                        "totalAllocatedUnits": 502.521,
-                        "averageCostNav": 20.8946,
-                        "totalCurrentValue": 20784.3188,
-                        "totalReturns": 10284.3188,
-                        "totalReturnsPercentage": 97.9459,
-                        "absoluteDayReturn": 191.9128,
-                        "absoluteDayReturnPercentage": 0.932,
-                        "navAsOnDate": 1740594600000,
-                        "navUpdatedAtDate": 1740678211000,
-                        "portfolioUpdatedAtDate": 1740678211000,
-                        "cagr": null,
-                        "xirr": null,
-                        "exitLoad": null,
-                        "taxImplications": null,
-                        "createdDate": 1624119217000,
-                        "updatedDate": 1740678211000,
+                        "updatedDate": 1749231689000,
                         "status": null,
                         "schemeType": null,
                         "amountToBeSaved": null,
@@ -720,17 +482,17 @@
                 },
                 {
                     "schemeDetails": {
-                        "isin": "INF846K01EW2",
-                        "name": "Axis ELSS Tax Saver Direct Plan-Growth",
-                        "primaryCategory": "Tax Saver",
-                        "subCategory": "ELSS",
-                        "navVal": 96.8975,
+                        "isin": "INF109K01Z71",
+                        "name": "ICICI Prudential US Bluechip Equity Direct Plan-Growth",
+                        "primaryCategory": "Equity",
+                        "subCategory": "International",
+                        "navVal": 67.86,
                         "riskometer": {
                             "id": 5,
                             "name": "High"
                         },
                         "ratings": [],
-                        "imgUrl": "https://static.paytmmoney.com/amc-logo/AXSMF.png",
+                        "imgUrl": "https://static.paytmmoney.com/amc-logo/ICIPR.png",
                         "riskometer2": {
                             "id": 6,
                             "name": "Very High"
@@ -740,26 +502,26 @@
                         "userId": 244173848,
                         "panNumber": null,
                         "panAlias": null,
-                        "isin": "INF846K01EW2",
-                        "isinName": "Axis Long Term Equity Direct Plan-Growth",
+                        "isin": "INF109K01Z71",
+                        "isinName": "ICICI Prudential US Bluechip Equity Direct Plan-Growth",
                         "isInstaRedemptionSupported": 0,
-                        "totalInvestedAmount": 20499.98,
-                        "totalAllocatedUnits": 305.701,
-                        "averageCostNav": 67.0589,
-                        "totalCurrentValue": 29621.6626,
-                        "totalReturns": 9121.6826,
-                        "totalReturnsPercentage": 44.4961,
-                        "absoluteDayReturn": -126.2546,
-                        "absoluteDayReturnPercentage": -0.4244,
-                        "navAsOnDate": 1740594600000,
-                        "navUpdatedAtDate": 1740678211000,
-                        "portfolioUpdatedAtDate": 1740678211000,
+                        "totalInvestedAmount": 81000,
+                        "totalAllocatedUnits": 1537.111,
+                        "averageCostNav": 52.6963,
+                        "totalCurrentValue": 104308.3525,
+                        "totalReturns": 23308.3525,
+                        "totalReturnsPercentage": 28.7757,
+                        "absoluteDayReturn": -860.7821,
+                        "absoluteDayReturnPercentage": -0.8185,
+                        "navAsOnDate": 1749061800000,
+                        "navUpdatedAtDate": 1749137400000,
+                        "portfolioUpdatedAtDate": 1749137400000,
                         "cagr": null,
-                        "xirr": null,
+                        "xirr": 11.2896,
                         "exitLoad": null,
                         "taxImplications": null,
-                        "createdDate": 1624119222000,
-                        "updatedDate": 1740678211000,
+                        "createdDate": 1624119210000,
+                        "updatedDate": 1749137400000,
                         "status": null,
                         "schemeType": null,
                         "amountToBeSaved": null,
@@ -784,7 +546,7 @@
                         "name": "Motilal Oswal Nifty Bank Index Fund Direct - Growth",
                         "primaryCategory": "Equity",
                         "subCategory": "Banking",
-                        "navVal": 17.9556,
+                        "navVal": 20.8595,
                         "riskometer": {
                             "id": 5,
                             "name": "High"
@@ -812,20 +574,150 @@
                         "totalInvestedAmount": 43500,
                         "totalAllocatedUnits": 2906.242,
                         "averageCostNav": 14.9678,
-                        "totalCurrentValue": 52183.3189,
-                        "totalReturns": 8683.3189,
-                        "totalReturnsPercentage": 19.9617,
-                        "absoluteDayReturn": 144.1496,
-                        "absoluteDayReturnPercentage": 0.277,
-                        "navAsOnDate": 1740594600000,
-                        "navUpdatedAtDate": 1740678211000,
-                        "portfolioUpdatedAtDate": 1740678211000,
+                        "totalCurrentValue": 60622.755,
+                        "totalReturns": 17122.755,
+                        "totalReturnsPercentage": 39.3627,
+                        "absoluteDayReturn": 873.6163,
+                        "absoluteDayReturnPercentage": 1.4621,
+                        "navAsOnDate": 1749148200000,
+                        "navUpdatedAtDate": 1749231689000,
+                        "portfolioUpdatedAtDate": 1749231689000,
                         "cagr": null,
-                        "xirr": null,
+                        "xirr": 15.846,
                         "exitLoad": null,
                         "taxImplications": null,
                         "createdDate": 1624119217000,
-                        "updatedDate": 1740678211000,
+                        "updatedDate": 1749231689000,
+                        "status": null,
+                        "schemeType": null,
+                        "amountToBeSaved": null,
+                        "message": "",
+                        "altMessage": "",
+                        "savingsMessage": "",
+                        "lockInApplicable": false,
+                        "switchInProgress": false,
+                        "eligibleForSwitch": false,
+                        "isPartialData": false
+                    },
+                    "portfolioSipDetails": {
+                        "sipStatus": [],
+                        "sipCountMap": {}
+                    },
+                    "folioDetails": null,
+                    "userRatings": null
+                },
+                {
+                    "schemeDetails": {
+                        "isin": "INF769K01IS5",
+                        "name": "Mirae Asset Global X Artificial Intelligence & Technology ETF FoF Direct - Growth",
+                        "primaryCategory": "Equity",
+                        "subCategory": "International",
+                        "navVal": 20.796,
+                        "riskometer": {
+                            "id": 5,
+                            "name": "High"
+                        },
+                        "ratings": [],
+                        "imgUrl": "https://static.paytmmoney.com/amc-logo/MIRAS.png",
+                        "riskometer2": {
+                            "id": 6,
+                            "name": "Very High"
+                        }
+                    },
+                    "investmentDetails": {
+                        "userId": 244173848,
+                        "panNumber": null,
+                        "panAlias": null,
+                        "isin": "INF769K01IS5",
+                        "isinName": "Mirae Asset Global X Artificial Intelligence & Technology ETF FoF Direct - Growth",
+                        "isInstaRedemptionSupported": 0,
+                        "totalInvestedAmount": 38000,
+                        "totalAllocatedUnits": 2608.895,
+                        "averageCostNav": 14.5656,
+                        "totalCurrentValue": 54254.5804,
+                        "totalReturns": 16254.5804,
+                        "totalReturnsPercentage": 42.7752,
+                        "absoluteDayReturn": -310.4585,
+                        "absoluteDayReturnPercentage": -0.569,
+                        "navAsOnDate": 1749061800000,
+                        "navUpdatedAtDate": 1749137400000,
+                        "portfolioUpdatedAtDate": 1749137400000,
+                        "cagr": null,
+                        "xirr": 26.427,
+                        "exitLoad": null,
+                        "taxImplications": null,
+                        "createdDate": 1691033512000,
+                        "updatedDate": 1749137400000,
+                        "status": null,
+                        "schemeType": null,
+                        "amountToBeSaved": null,
+                        "message": "",
+                        "altMessage": "",
+                        "savingsMessage": "",
+                        "lockInApplicable": false,
+                        "switchInProgress": false,
+                        "eligibleForSwitch": false,
+                        "isPartialData": false
+                    },
+                    "portfolioSipDetails": {
+                        "sipStatus": [
+                            "Paused"
+                        ],
+                        "sipCountMap": {
+                            "Paused": 1
+                        }
+                    },
+                    "folioDetails": null,
+                    "userRatings": null
+                },
+                {
+                    "schemeDetails": {
+                        "isin": "INF966L01689",
+                        "name": "Quant Small Cap Fund Direct Plan-Growth",
+                        "primaryCategory": "Equity",
+                        "subCategory": "Small Cap",
+                        "navVal": 275.4104,
+                        "riskometer": {
+                            "id": 5,
+                            "name": "High"
+                        },
+                        "ratings": [
+                            {
+                                "provider": "Value Research",
+                                "type": "Overall",
+                                "rating": 5
+                            }
+                        ],
+                        "imgUrl": "https://static.paytmmoney.com/amc-logo/ESCMF.png",
+                        "riskometer2": {
+                            "id": 6,
+                            "name": "Very High"
+                        }
+                    },
+                    "investmentDetails": {
+                        "userId": 244173848,
+                        "panNumber": null,
+                        "panAlias": null,
+                        "isin": "INF966L01689",
+                        "isinName": "Quant Small Cap Fund Direct Plan-Growth",
+                        "isInstaRedemptionSupported": 0,
+                        "totalInvestedAmount": 66000,
+                        "totalAllocatedUnits": 297.177,
+                        "averageCostNav": 222.0899,
+                        "totalCurrentValue": 81845.6364,
+                        "totalReturns": 15845.6364,
+                        "totalReturnsPercentage": 24.0085,
+                        "absoluteDayReturn": 339.3167,
+                        "absoluteDayReturnPercentage": 0.4163,
+                        "navAsOnDate": 1749148200000,
+                        "navUpdatedAtDate": 1749226333000,
+                        "portfolioUpdatedAtDate": 1749226333000,
+                        "cagr": null,
+                        "xirr": 16.7715,
+                        "exitLoad": null,
+                        "taxImplications": null,
+                        "createdDate": 1679031207000,
+                        "updatedDate": 1749226333000,
                         "status": null,
                         "schemeType": null,
                         "amountToBeSaved": null,
@@ -850,11 +742,195 @@
                 },
                 {
                     "schemeDetails": {
+                        "isin": "INF247L01AG2",
+                        "name": "Motilal Oswal S&P 500 Index Fund Direct - Growth",
+                        "primaryCategory": "Equity",
+                        "subCategory": "International",
+                        "navVal": 23.4518,
+                        "riskometer": {
+                            "id": 5,
+                            "name": "High"
+                        },
+                        "ratings": [],
+                        "imgUrl": "https://static.paytmmoney.com/amc-logo/MOTOS.png",
+                        "riskometer2": {
+                            "id": 6,
+                            "name": "Very High"
+                        }
+                    },
+                    "investmentDetails": {
+                        "userId": 244173848,
+                        "panNumber": null,
+                        "panAlias": null,
+                        "isin": "INF247L01AG2",
+                        "isinName": "Motilal Oswal S&P 500 Index Fund Direct - Growth",
+                        "isInstaRedemptionSupported": 0,
+                        "totalInvestedAmount": 31500,
+                        "totalAllocatedUnits": 1939.692,
+                        "averageCostNav": 16.2397,
+                        "totalCurrentValue": 45489.2688,
+                        "totalReturns": 13989.2688,
+                        "totalReturnsPercentage": 44.4104,
+                        "absoluteDayReturn": -280.2855,
+                        "absoluteDayReturnPercentage": -0.6124,
+                        "navAsOnDate": 1749061800000,
+                        "navUpdatedAtDate": 1749137400000,
+                        "portfolioUpdatedAtDate": 1749137400000,
+                        "cagr": null,
+                        "xirr": 16.3069,
+                        "exitLoad": null,
+                        "taxImplications": null,
+                        "createdDate": 1624119219000,
+                        "updatedDate": 1749137400000,
+                        "status": null,
+                        "schemeType": null,
+                        "amountToBeSaved": null,
+                        "message": "",
+                        "altMessage": "",
+                        "savingsMessage": "",
+                        "lockInApplicable": false,
+                        "switchInProgress": false,
+                        "eligibleForSwitch": false,
+                        "isPartialData": false
+                    },
+                    "portfolioSipDetails": {
+                        "sipStatus": [
+                            "Paused"
+                        ],
+                        "sipCountMap": {
+                            "Paused": 1
+                        }
+                    },
+                    "folioDetails": null,
+                    "userRatings": null
+                },
+                {
+                    "schemeDetails": {
+                        "isin": "INF846K01EW2",
+                        "name": "Axis ELSS Tax Saver Direct Plan-Growth",
+                        "primaryCategory": "Tax Saver",
+                        "subCategory": "ELSS",
+                        "navVal": 108.4007,
+                        "riskometer": {
+                            "id": 5,
+                            "name": "High"
+                        },
+                        "ratings": [],
+                        "imgUrl": "https://static.paytmmoney.com/amc-logo/AXSMF.png",
+                        "riskometer2": {
+                            "id": 6,
+                            "name": "Very High"
+                        }
+                    },
+                    "investmentDetails": {
+                        "userId": 244173848,
+                        "panNumber": null,
+                        "panAlias": null,
+                        "isin": "INF846K01EW2",
+                        "isinName": "Axis Long Term Equity Direct Plan-Growth",
+                        "isInstaRedemptionSupported": 0,
+                        "totalInvestedAmount": 20499.98,
+                        "totalAllocatedUnits": 305.701,
+                        "averageCostNav": 67.0589,
+                        "totalCurrentValue": 33138.2024,
+                        "totalReturns": 12638.2224,
+                        "totalReturnsPercentage": 61.6499,
+                        "absoluteDayReturn": 259.051,
+                        "absoluteDayReturnPercentage": 0.7879,
+                        "navAsOnDate": 1749148200000,
+                        "navUpdatedAtDate": 1749231689000,
+                        "portfolioUpdatedAtDate": 1749231689000,
+                        "cagr": null,
+                        "xirr": 14.5167,
+                        "exitLoad": null,
+                        "taxImplications": null,
+                        "createdDate": 1624119222000,
+                        "updatedDate": 1749231689000,
+                        "status": null,
+                        "schemeType": null,
+                        "amountToBeSaved": null,
+                        "message": "",
+                        "altMessage": "",
+                        "savingsMessage": "",
+                        "lockInApplicable": false,
+                        "switchInProgress": false,
+                        "eligibleForSwitch": false,
+                        "isPartialData": false
+                    },
+                    "portfolioSipDetails": {
+                        "sipStatus": [],
+                        "sipCountMap": {}
+                    },
+                    "folioDetails": null,
+                    "userRatings": null
+                },
+                {
+                    "schemeDetails": {
+                        "isin": "INF247L01718",
+                        "name": "Motilal Oswal Nasdaq 100 FOF Direct - Growth",
+                        "primaryCategory": "Equity",
+                        "subCategory": "International",
+                        "navVal": 38.1441,
+                        "riskometer": {
+                            "id": 5,
+                            "name": "High"
+                        },
+                        "ratings": [],
+                        "imgUrl": "https://static.paytmmoney.com/amc-logo/MOTOS.png",
+                        "riskometer2": {
+                            "id": 6,
+                            "name": "Very High"
+                        }
+                    },
+                    "investmentDetails": {
+                        "userId": 244173848,
+                        "panNumber": null,
+                        "panAlias": null,
+                        "isin": "INF247L01718",
+                        "isinName": "Motilal Oswal Nasdaq 100 FOF Direct - Growth",
+                        "isInstaRedemptionSupported": 0,
+                        "totalInvestedAmount": 10500,
+                        "totalAllocatedUnits": 502.521,
+                        "averageCostNav": 20.8946,
+                        "totalCurrentValue": 19168.2113,
+                        "totalReturns": 8668.2113,
+                        "totalReturnsPercentage": 82.5544,
+                        "absoluteDayReturn": -61.8603,
+                        "absoluteDayReturnPercentage": -0.3217,
+                        "navAsOnDate": 1749148200000,
+                        "navUpdatedAtDate": 1749231689000,
+                        "portfolioUpdatedAtDate": 1749231689000,
+                        "cagr": null,
+                        "xirr": 16.0463,
+                        "exitLoad": null,
+                        "taxImplications": null,
+                        "createdDate": 1624119217000,
+                        "updatedDate": 1749231689000,
+                        "status": null,
+                        "schemeType": null,
+                        "amountToBeSaved": null,
+                        "message": "",
+                        "altMessage": "",
+                        "savingsMessage": "",
+                        "lockInApplicable": false,
+                        "switchInProgress": false,
+                        "eligibleForSwitch": false,
+                        "isPartialData": false
+                    },
+                    "portfolioSipDetails": {
+                        "sipStatus": [],
+                        "sipCountMap": {}
+                    },
+                    "folioDetails": null,
+                    "userRatings": null
+                },
+                {
+                    "schemeDetails": {
                         "isin": "INF209KB1O25",
                         "name": "Aditya Birla Sun Life Pharma & Healthcare Fund Direct-Growth",
                         "primaryCategory": "Equity",
                         "subCategory": "Pharma",
-                        "navVal": 30.44,
+                        "navVal": 32.96,
                         "riskometer": {
                             "id": 5,
                             "name": "High"
@@ -882,20 +958,20 @@
                         "totalInvestedAmount": 7000,
                         "totalAllocatedUnits": 389.949,
                         "averageCostNav": 17.9511,
-                        "totalCurrentValue": 11870.0476,
-                        "totalReturns": 4870.0476,
-                        "totalReturnsPercentage": 69.5721,
-                        "absoluteDayReturn": -81.8893,
-                        "absoluteDayReturnPercentage": -0.6852,
-                        "navAsOnDate": 1740594600000,
-                        "navUpdatedAtDate": 1740678211000,
-                        "portfolioUpdatedAtDate": 1740678211000,
+                        "totalCurrentValue": 12852.719,
+                        "totalReturns": 5852.719,
+                        "totalReturnsPercentage": 83.6103,
+                        "absoluteDayReturn": 19.4974,
+                        "absoluteDayReturnPercentage": 0.1519,
+                        "navAsOnDate": 1749148200000,
+                        "navUpdatedAtDate": 1749231689000,
+                        "portfolioUpdatedAtDate": 1749231689000,
                         "cagr": null,
-                        "xirr": null,
+                        "xirr": 16.6093,
                         "exitLoad": null,
                         "taxImplications": null,
                         "createdDate": 1624119215000,
-                        "updatedDate": 1740678211000,
+                        "updatedDate": 1749231689000,
                         "status": null,
                         "schemeType": null,
                         "amountToBeSaved": null,
@@ -916,81 +992,11 @@
                 },
                 {
                     "schemeDetails": {
-                        "isin": "INF966L01689",
-                        "name": "Quant Small Cap Fund Direct Plan-Growth",
-                        "primaryCategory": "Equity",
-                        "subCategory": "Small Cap",
-                        "navVal": 237.1712,
-                        "riskometer": {
-                            "id": 5,
-                            "name": "High"
-                        },
-                        "ratings": [
-                            {
-                                "provider": "Value Research",
-                                "type": "Overall",
-                                "rating": 5
-                            }
-                        ],
-                        "imgUrl": "https://static.paytmmoney.com/amc-logo/ESCMF.png",
-                        "riskometer2": {
-                            "id": 6,
-                            "name": "Very High"
-                        }
-                    },
-                    "investmentDetails": {
-                        "userId": 244173848,
-                        "panNumber": null,
-                        "panAlias": null,
-                        "isin": "INF966L01689",
-                        "isinName": "Quant Small Cap Fund Direct Plan-Growth",
-                        "isInstaRedemptionSupported": 0,
-                        "totalInvestedAmount": 65000,
-                        "totalAllocatedUnits": 293.482,
-                        "averageCostNav": 221.4787,
-                        "totalCurrentValue": 69605.4781,
-                        "totalReturns": 4605.4781,
-                        "totalReturnsPercentage": 7.0854,
-                        "absoluteDayReturn": -865.273,
-                        "absoluteDayReturnPercentage": -1.2278,
-                        "navAsOnDate": 1740594600000,
-                        "navUpdatedAtDate": 1740678211000,
-                        "portfolioUpdatedAtDate": 1740678211000,
-                        "cagr": null,
-                        "xirr": null,
-                        "exitLoad": null,
-                        "taxImplications": null,
-                        "createdDate": 1679031207000,
-                        "updatedDate": 1740678211000,
-                        "status": null,
-                        "schemeType": null,
-                        "amountToBeSaved": null,
-                        "message": "",
-                        "altMessage": "",
-                        "savingsMessage": "",
-                        "lockInApplicable": false,
-                        "switchInProgress": false,
-                        "eligibleForSwitch": false,
-                        "isPartialData": false
-                    },
-                    "portfolioSipDetails": {
-                        "sipStatus": [
-                            "Active"
-                        ],
-                        "sipCountMap": {
-                            "Active": 1
-                        }
-                    },
-                    "folioDetails": null,
-                    "userRatings": null
-                },
-                {
-                    "schemeDetails": {
                         "isin": "INF251K01QT5",
                         "name": "Baroda BNP Paribas Aqua FoF Direct - Growth",
                         "primaryCategory": "Equity",
                         "subCategory": "International",
-                        "navVal": 12.8654,
+                        "navVal": 13.6089,
                         "riskometer": {
                             "id": 5,
                             "name": "High"
@@ -1012,80 +1018,20 @@
                         "totalInvestedAmount": 5800,
                         "totalAllocatedUnits": 564.54,
                         "averageCostNav": 10.2739,
-                        "totalCurrentValue": 7263.0329,
-                        "totalReturns": 1463.0329,
-                        "totalReturnsPercentage": 25.2247,
-                        "absoluteDayReturn": -28.6222,
-                        "absoluteDayReturnPercentage": -0.3925,
-                        "navAsOnDate": 1740594600000,
-                        "navUpdatedAtDate": 1740670200000,
-                        "portfolioUpdatedAtDate": 1740670200000,
+                        "totalCurrentValue": 7682.7684,
+                        "totalReturns": 1882.7684,
+                        "totalReturnsPercentage": 32.4615,
+                        "absoluteDayReturn": 0.5645,
+                        "absoluteDayReturnPercentage": 0.0073,
+                        "navAsOnDate": 1749061800000,
+                        "navUpdatedAtDate": 1749137400000,
+                        "portfolioUpdatedAtDate": 1749137400000,
                         "cagr": null,
-                        "xirr": null,
+                        "xirr": 8.5621,
                         "exitLoad": null,
                         "taxImplications": null,
                         "createdDate": 1624119220000,
-                        "updatedDate": 1740670200000,
-                        "status": null,
-                        "schemeType": null,
-                        "amountToBeSaved": null,
-                        "message": "",
-                        "altMessage": "",
-                        "savingsMessage": "",
-                        "lockInApplicable": false,
-                        "switchInProgress": false,
-                        "eligibleForSwitch": false,
-                        "isPartialData": false
-                    },
-                    "portfolioSipDetails": {
-                        "sipStatus": [],
-                        "sipCountMap": {}
-                    },
-                    "folioDetails": null,
-                    "userRatings": null
-                },
-                {
-                    "schemeDetails": {
-                        "isin": "INF204KB1YQ1",
-                        "name": "Nippon India Nivesh Lakshya Fund Direct - Growth",
-                        "primaryCategory": "Debt",
-                        "subCategory": "Long Duration",
-                        "navVal": 17.6867,
-                        "riskometer": {
-                            "id": 3,
-                            "name": "Moderate"
-                        },
-                        "ratings": [],
-                        "imgUrl": "https://static.paytmmoney.com/amc-logo/RELMF.png",
-                        "riskometer2": {
-                            "id": 3,
-                            "name": "Moderate"
-                        }
-                    },
-                    "investmentDetails": {
-                        "userId": 244173848,
-                        "panNumber": null,
-                        "panAlias": null,
-                        "isin": "INF204KB1YQ1",
-                        "isinName": "Nippon India Nivesh Lakshya Fund Direct - Growth",
-                        "isInstaRedemptionSupported": 0,
-                        "totalInvestedAmount": 0.0134,
-                        "totalAllocatedUnits": 0.001,
-                        "averageCostNav": 13.3793,
-                        "totalCurrentValue": 0.0177,
-                        "totalReturns": 0.0043,
-                        "totalReturnsPercentage": 32.0896,
-                        "absoluteDayReturn": 0,
-                        "absoluteDayReturnPercentage": 0,
-                        "navAsOnDate": 1740594600000,
-                        "navUpdatedAtDate": 1740678211000,
-                        "portfolioUpdatedAtDate": 1740678211000,
-                        "cagr": null,
-                        "xirr": null,
-                        "exitLoad": null,
-                        "taxImplications": null,
-                        "createdDate": 1624119214000,
-                        "updatedDate": 1740678211000,
+                        "updatedDate": 1749137400000,
                         "status": null,
                         "schemeType": null,
                         "amountToBeSaved": null,
@@ -1110,7 +1056,7 @@
                         "name": "Edelweiss Recently Listed IPO Fund Direct - Growth",
                         "primaryCategory": "Equity",
                         "subCategory": "Themed",
-                        "navVal": 24.17,
+                        "navVal": 27.5822,
                         "riskometer": {
                             "id": 5,
                             "name": "High"
@@ -1132,20 +1078,20 @@
                         "totalInvestedAmount": 10500,
                         "totalAllocatedUnits": 414.252,
                         "averageCostNav": 25.3469,
-                        "totalCurrentValue": 10012.4708,
-                        "totalReturns": -487.5292,
-                        "totalReturnsPercentage": -4.6431,
-                        "absoluteDayReturn": -231.2355,
-                        "absoluteDayReturnPercentage": -2.2573,
-                        "navAsOnDate": 1740594600000,
-                        "navUpdatedAtDate": 1740670200000,
-                        "portfolioUpdatedAtDate": 1740670200000,
+                        "totalCurrentValue": 11425.9815,
+                        "totalReturns": 925.9815,
+                        "totalReturnsPercentage": 8.8189,
+                        "absoluteDayReturn": 17.6471,
+                        "absoluteDayReturnPercentage": 0.1547,
+                        "navAsOnDate": 1749148200000,
+                        "navUpdatedAtDate": 1749231689000,
+                        "portfolioUpdatedAtDate": 1749231689000,
                         "cagr": null,
-                        "xirr": null,
+                        "xirr": 8.3519,
                         "exitLoad": null,
                         "taxImplications": null,
                         "createdDate": 1698730603000,
-                        "updatedDate": 1740670200000,
+                        "updatedDate": 1749231689000,
                         "status": null,
                         "schemeType": null,
                         "amountToBeSaved": null,
@@ -1158,12 +1104,68 @@
                         "isPartialData": false
                     },
                     "portfolioSipDetails": {
-                        "sipStatus": [
-                            "Active"
-                        ],
-                        "sipCountMap": {
-                            "Active": 1
+                        "sipStatus": [],
+                        "sipCountMap": {}
+                    },
+                    "folioDetails": null,
+                    "userRatings": null
+                },
+                {
+                    "schemeDetails": {
+                        "isin": "INF204KB1YQ1",
+                        "name": "Nippon India Nivesh Lakshya Fund Direct - Growth",
+                        "primaryCategory": "Debt",
+                        "subCategory": "Long Duration",
+                        "navVal": 18.4682,
+                        "riskometer": {
+                            "id": 3,
+                            "name": "Moderate"
+                        },
+                        "ratings": [],
+                        "imgUrl": "https://static.paytmmoney.com/amc-logo/RELMF.png",
+                        "riskometer2": {
+                            "id": 3,
+                            "name": "Moderate"
                         }
+                    },
+                    "investmentDetails": {
+                        "userId": 244173848,
+                        "panNumber": null,
+                        "panAlias": null,
+                        "isin": "INF204KB1YQ1",
+                        "isinName": "Nippon India Nivesh Lakshya Fund Direct - Growth",
+                        "isInstaRedemptionSupported": 0,
+                        "totalInvestedAmount": 0.013,
+                        "totalAllocatedUnits": 0.001,
+                        "averageCostNav": 13.3793,
+                        "totalCurrentValue": 0.0185,
+                        "totalReturns": 0.0051,
+                        "totalReturnsPercentage": 38.0597,
+                        "absoluteDayReturn": -0.0001,
+                        "absoluteDayReturnPercentage": -0.5376,
+                        "navAsOnDate": 1749148200000,
+                        "navUpdatedAtDate": 1749231689000,
+                        "portfolioUpdatedAtDate": 1749231689000,
+                        "cagr": null,
+                        "xirr": 1.4439,
+                        "exitLoad": null,
+                        "taxImplications": null,
+                        "createdDate": 1624119214000,
+                        "updatedDate": 1749231689000,
+                        "status": null,
+                        "schemeType": null,
+                        "amountToBeSaved": null,
+                        "message": "",
+                        "altMessage": "",
+                        "savingsMessage": "",
+                        "lockInApplicable": false,
+                        "switchInProgress": false,
+                        "eligibleForSwitch": false,
+                        "isPartialData": false
+                    },
+                    "portfolioSipDetails": {
+                        "sipStatus": [],
+                        "sipCountMap": {}
                     },
                     "folioDetails": null,
                     "userRatings": null
